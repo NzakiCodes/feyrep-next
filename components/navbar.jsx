@@ -2,7 +2,7 @@ const Navbar = ({activeBtn}) => {
     return (
         <div className=" fixed w-full bg-white border-white border-b-2 shadow">
             {/* <h1 className="text font-medium text-2xl">FEYReP</h1> */}
-            <div className="bg-black py-5 px-12 ">
+            <div className="bg-primary py-5 px-12 hidden">
             </div>
             <div className=" flex flex-row justify-between lg:justify-center fw-container sm:gap-10 md:gap-0" >
                 <div className="py-3 px-4  md:px-8 flex">
