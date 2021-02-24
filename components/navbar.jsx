@@ -7,7 +7,7 @@ const Navbar = ({activeBtn}) => {
             <div className=" flex sm:flex-col md:flex-row fw-container sm:gap-10 md:gap-0" >
                 <div className="col-span-3 py-3 px-4  md:px-12 flex">
                     <div className="col-span-4 p-2">
-                        <img className="h-10 md:h-12" src="/img/logo-icon.png" alt="FEYReP logo" />
+                        <img className="h-10 md:h-12" src="/images/logo-icon.png" alt="FEYReP logo" />
                     </div>
                     <div className="col-span-8">
                         <h1 className="text-4xl py-3 px-1 text-gray-900 font-serif">FEY<span className="text-gray-500">ReP</span></h1>
