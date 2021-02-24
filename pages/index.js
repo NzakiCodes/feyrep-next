@@ -18,7 +18,7 @@ export default function Home() {
         <Header/>
       </main>
       {/* <img src="/images/logo-icon.png" alt="FEYReP logo" /> */}
-      <img src="/_next/static//images/img-hero.jpg" alt="FEYReP lll />
+      <img src="/_next/static//images/img-hero.jpg" alt="FEYReP lll "/>
     </div>
   )
 }
