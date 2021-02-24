@@ -1,16 +1,27 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+:root{
+  --primary-color: #42093f;
+  --secondary-color: #80a316;
 }
-
-a {
-  color: inherit;
-  text-decoration: none;
+/* fw:FEYReP Website */
+.fw-container{
+  margin: auto;
+  max-width: 1300px;
 }
-
-* {
-  box-sizing: border-box;
+.nav-buttons a{
+  @apply px-4 py-8;
 }
+.nav-buttons a:not(.home-btn) {
+  @apply border-b-2 border-transparent text-primary-200 hover:border-primary transition;
+}
+.btn{
+  @apply px-6 py-4 shadow-lg rounded-lg  text-white uppercase tracking-wider font-semibold text-sm sm:text-base transition;
+}
+.btn-primary{
+  @apply bg-primary-200 hover:bg-primary;
+}
+.btn-secondary{
+  @apply bg-secondary-200 hover:bg-secondary; 
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
