@@ -1,26 +1,41 @@
-:root{
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+:root {
   --primary-color: #42093f;
   --secondary-color: #80a316;
 }
-/* fw:FEYReP Website */
-.fw-container{
-  margin: auto;
-  max-width: 1300px;
+body {
+  font-family: "Poppins", sans-serif !important;
 }
-.nav-buttons a{
-  @apply px-4 py-8 hover:text-primary-200 ;
+
+/* fw:FEYReP Website */
+.fw-container {
+  margin: auto;
+  max-width: 1200px;
+}
+.fw-logo-text {
+  @apply text-4xl py-3 px-1 text-gray-900 font-serif;
+}
+.fw-logo {
+  @apply h-10 md:h-12;
+}
+.nav-buttons a {
+  @apply px-4 py-8 hover:text-primary-200;
+}
+.nav-buttons a {
+  font-weight: 300!important;
+  text-transform: uppercase;
 }
 .nav-buttons a:not(.home-btn) {
   @apply border-b-2 border-transparent hover:border-primary transition;
 }
-.btn{
+.btn {
   @apply px-6 py-4 shadow-lg rounded-lg  text-white uppercase tracking-wider font-semibold text-sm sm:text-base transition;
 }
-.btn-primary{
+.btn-primary {
   @apply bg-primary-200 hover:bg-primary;
 }
-.btn-secondary{
-  @apply bg-secondary-200 hover:bg-secondary; 
+.btn-secondary {
+  @apply bg-secondary-200 hover:bg-secondary;
 }
 @tailwind base;
 @tailwind components;

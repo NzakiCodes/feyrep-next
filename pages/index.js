@@ -17,7 +17,7 @@ export default function Home() {
         <div className="p-10"/>
         <Header/>
       </main>
-      <img src="/images/logo-icon.png" alt="FEYReP logo" />
+      {/* <img src="/images/logo-icon.png" alt="FEYReP logo" /> */}
     </div>
   )
 }
