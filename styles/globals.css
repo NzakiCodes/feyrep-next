@@ -8,10 +8,10 @@
   max-width: 1300px;
 }
 .nav-buttons a{
-  @apply px-4 py-8;
+  @apply px-4 py-8 hover:text-primary-200 ;
 }
 .nav-buttons a:not(.home-btn) {
-  @apply border-b-2 border-transparent text-primary-200 hover:border-primary transition;
+  @apply border-b-2 border-transparent hover:border-primary transition;
 }
 .btn{
   @apply px-6 py-4 shadow-lg rounded-lg  text-white uppercase tracking-wider font-semibold text-sm sm:text-base transition;
