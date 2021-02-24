@@ -39,7 +39,7 @@ body {
 }
 
 .fw-header-hero {
-  @apply bg-cover object-center;
+  @apply bg-cover object-center w-screen h-auto;
 }
 
 @tailwind base;
