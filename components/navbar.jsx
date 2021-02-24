@@ -5,7 +5,7 @@ const Navbar = ({activeBtn}) => {
             <div className="bg-black py-5 px-12 ">
             </div>
             <div className=" flex flex-row justify-between lg:justify-center fw-container sm:gap-10 md:gap-0" >
-                <div className="py-3 px-4  md:px-12 flex">
+                <div className="py-3 px-4  md:px-8 flex">
                     <div className="col-span-5 xlg:col-span-4 p-2">
                         <img className="fw-logo" src="/images/logo-icon.png" alt="FEYReP logo" />
                     </div>
