@@ -5,7 +5,7 @@ const Navbar = ({activeBtn}) => {
             <div className="bg-primary py-5 px-12 hidden">
             </div>
             <div className=" flex flex-row justify-between lg:justify-center fw-container sm:gap-10 md:gap-0" >
-                <div className="py-3 px-4  md:px-8 flex">
+                <div className="py-3 px-4  md:px-6 flex">
                     <div className="col-span-5 xlg:col-span-4 p-2">
                         <img className="fw-logo" src="/images/logo-icon.png" alt="FEYReP logo" />
                     </div>
@@ -15,7 +15,7 @@ const Navbar = ({activeBtn}) => {
                 </div>
                 <div className="hidden lg:block  ">
                     <div className="justify-items-center grid  grid-flow-col lg:gap-0 xl:gap-1 place-items-center font-normal nav-buttons transition-all">
-                        <a className={`${activeBtn =="home" && 'border-primary border-b-2 home-btn'}`} href="#">Home</a>
+                        <a className={`${activeBtn =="home" && 'border-primary border-b-2 home-btn '}`} href="#">Home</a>
                         <a className={`${activeBtn =="about-us" && 'border-primary border-b-2 home-btn'}`} href="#">About</a>
                         <a href="#">Projects</a>
                         <a href="#">Media</a>
@@ -25,8 +25,8 @@ const Navbar = ({activeBtn}) => {
                     </div>
                 </div>
                 <div className=" hidden xl:block xlg:col-span-1">
-                    <div className="m-8 px-4">
-                        <a href="/donate" className="btn btn-primary hover:opacity-80">Donate</a>
+                    <div className=" my-8 mx-4 px-4">
+                        <a href="/donate" className="fw-donate-btn">Donate Now</a>
                     </div>
                 </div>
                 <div className="sm:col-span-7 lg:hidden ">

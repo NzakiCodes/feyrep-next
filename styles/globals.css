@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&family=Quicksand:wght@500&display=swap");
 :root {
   --primary-color: #42093f;
   --secondary-color: #80a316;
@@ -21,18 +21,23 @@ body {
 .nav-buttons a {
   @apply px-4 py-8 hover:text-primary-200;
 }
-.nav-buttons a {
-  font-weight: 300!important;
+.fw-donate-btn .nav-buttons a {
+  font-weight: 500 !important;
   text-transform: uppercase;
+  font-family: "Quicksand", sans-serif;
+  font-size: 14px;
+}
+.fw-donate-btn {
+  @apply sm:text-base transition px-6 py-3  border-primary-200 text-primary-200 border rounded-3xl hover:border-primary hover:text-primary;
 }
 .nav-buttons a:not(.home-btn) {
   @apply border-b-2 border-transparent hover:border-primary transition;
 }
 .btn {
-  @apply px-6 py-4 shadow-lg rounded-lg  text-white uppercase tracking-wider font-semibold text-sm sm:text-base transition;
+  @apply px-6 py-4 rounded-lg  text-white uppercase tracking-wider font-semibold text-sm sm:text-base transition;
 }
 .btn-primary {
-  @apply bg-primary-200 hover:bg-primary;
+  @apply bg-primary-200 shadow-lg hover:bg-primary;
 }
 .btn-secondary {
   @apply bg-secondary-200 hover:bg-secondary;
