@@ -1,6 +1,6 @@
 const Navbar = ({activeBtn}) => {
     return (
-        <div className=" fixed w-full bg-white border-white border-b-2 shadow">
+        <div className="z-50 fixed w-full bg-white border-white border-b-2 shadow">
             {/* <h1 className="text font-medium text-2xl">FEYReP</h1> */}
             <div className="bg-primary py-5 px-12 hidden">
             </div>
