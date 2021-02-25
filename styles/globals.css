@@ -21,14 +21,14 @@ body {
 .nav-buttons a {
   @apply px-4 py-8 hover:text-primary-200;
 }
-.fw-donate-btn .nav-buttons a {
+.fw-donate-btn, .nav-buttons a {
   font-weight: 500 !important;
   text-transform: uppercase;
   font-family: "Quicksand", sans-serif;
   font-size: 14px;
 }
 .fw-donate-btn {
-  @apply sm:text-base transition px-6 py-3  border-primary-200 text-primary-200 border rounded-3xl hover:border-primary hover:text-primary;
+  @apply sm:text-base transition px-6 py-3  border-primary-200 text-primary-200 border rounded-3xl hover:border-primary hover:text-primary
 }
 .nav-buttons a:not(.home-btn) {
   @apply border-b-2 border-transparent hover:border-primary transition;

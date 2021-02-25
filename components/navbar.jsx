@@ -26,7 +26,7 @@ const Navbar = ({activeBtn}) => {
                 </div>
                 <div className=" hidden xl:block xlg:col-span-1">
                     <div className=" my-8 mx-4 px-4">
-                        <a href="/donate" className="fw-donate-btn">Donate Now</a>
+                        <a href="/donate" className="fw-donate-btn hover:text-secondary-200 hover:border-secondary-200">Donate Now</a>
                     </div>
                 </div>
                 <div className="sm:col-span-7 lg:hidden ">
