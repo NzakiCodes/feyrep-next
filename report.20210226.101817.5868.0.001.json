@@ -1,0 +1,440 @@
+
+{
+  "header": {
+    "reportVersion": 2,
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20210226.101817.5868.0.001.json",
+    "dumpEventTime": "2021-02-26T10:18:17Z",
+    "dumpEventTimeStamp": "1614331097115",
+    "processId": 5868,
+    "threadId": null,
+    "cwd": "C:\\WorkSpace\\nextjs-projects\\feyrep",
+    "commandLine": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\WorkSpace\\nextjs-projects\\feyrep\\node_modules\\.bin\\\\..\\next\\dist\\bin\\next",
+      "dev"
+    ],
+    "nodejsVersion": "v12.16.3",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "win32",
+    "componentVersions": {
+      "node": "12.16.3",
+      "v8": "7.8.279.23-node.35",
+      "uv": "1.34.2",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.16.0",
+      "modules": "72",
+      "nghttp2": "1.40.0",
+      "napi": "5",
+      "llhttp": "2.0.4",
+      "http_parser": "2.9.3",
+      "openssl": "1.1.1g",
+      "cldr": "36.0",
+      "icu": "65.1",
+      "tz": "2019c",
+      "unicode": "12.1"
+    },
+    "release": {
+      "name": "node",
+      "lts": "Erbium",
+      "headersUrl": "https://nodejs.org/download/release/v12.16.3/node-v12.16.3-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v12.16.3/node-v12.16.3.tar.gz",
+      "libUrl": "https://nodejs.org/download/release/v12.16.3/win-x64/node.lib"
+    },
+    "osName": "Windows_NT",
+    "osRelease": "10.0.10240",
+    "osVersion": "Windows 10 Home",
+    "osMachine": "x86_64",
+    "cpus": [
+      {
+        "model": "Intel(R) Core(TM) i5 CPU       M 520  @ 2.40GHz",
+        "speed": 2394,
+        "user": 12210531,
+        "nice": 0,
+        "sys": 5831062,
+        "idle": 42040656,
+        "irq": 518937
+      },
+      {
+        "model": "Intel(R) Core(TM) i5 CPU       M 520  @ 2.40GHz",
+        "speed": 2394,
+        "user": 12367796,
+        "nice": 0,
+        "sys": 4870906,
+        "idle": 42843390,
+        "irq": 216593
+      },
+      {
+        "model": "Intel(R) Core(TM) i5 CPU       M 520  @ 2.40GHz",
+        "speed": 2394,
+        "user": 13198312,
+        "nice": 0,
+        "sys": 4798437,
+        "idle": 42085296,
+        "irq": 135312
+      },
+      {
+        "model": "Intel(R) Core(TM) i5 CPU       M 520  @ 2.40GHz",
+        "speed": 2394,
+        "user": 13263671,
+        "nice": 0,
+        "sys": 4367234,
+        "idle": 42451156,
+        "irq": 121484
+      }
+    ],
+    "networkInterfaces": [
+      {
+        "name": "Wi-Fi",
+        "internal": false,
+        "mac": "18:3d:a2:63:1f:08",
+        "address": "fe80::c63:b23f:97a6:f8b8",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 6
+      },
+      {
+        "name": "Wi-Fi",
+        "internal": false,
+        "mac": "18:3d:a2:63:1f:08",
+        "address": "192.168.43.129",
+        "netmask": "255.255.255.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "Loopback Pseudo-Interface 1",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "::1",
+        "netmask": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "Loopback Pseudo-Interface 1",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "127.0.0.1",
+        "netmask": "255.0.0.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "Teredo Tunneling Pseudo-Interface",
+        "internal": false,
+        "mac": "00:00:00:00:00:00",
+        "address": "2001:0:2851:782c:cb:3f97:3a2d:aa0f",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "Teredo Tunneling Pseudo-Interface",
+        "internal": false,
+        "mac": "00:00:00:00:00:00",
+        "address": "fe80::cb:3f97:3a2d:aa0f",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 2
+      }
+    ],
+    "host": "Taqualabs"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x00007ff7eb9d2449",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+11577"
+    },
+    {
+      "pc": "0x00007ff7eb9d69a9",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+29337"
+    },
+    {
+      "pc": "0x00007ff7eb9d5828",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+24856"
+    },
+    {
+      "pc": "0x00007ff7ebb0d8c2",
+      "symbol": "v8::base::CPU::has_sse+68658"
+    },
+    {
+      "pc": "0x00007ff7ec329bbe",
+      "symbol": "v8::Isolate::ReportExternalAllocationLimitReached+94"
+    },
+    {
+      "pc": "0x00007ff7ec311c91",
+      "symbol": "v8::SharedArrayBuffer::Externalize+833"
+    },
+    {
+      "pc": "0x00007ff7ec1de1ec",
+      "symbol": "v8::internal::Heap::EphemeronKeyWriteBarrierFromCode+1436"
+    },
+    {
+      "pc": "0x00007ff7ec1e9420",
+      "symbol": "v8::internal::Heap::ProtectUnprotectedMemoryChunks+1312"
+    },
+    {
+      "pc": "0x00007ff7ec1e5f44",
+      "symbol": "v8::internal::Heap::PageFlagsAreConsistent+3204"
+    },
+    {
+      "pc": "0x00007ff7ec1db743",
+      "symbol": "v8::internal::Heap::CollectGarbage+1283"
+    },
+    {
+      "pc": "0x00007ff7ec1d9db4",
+      "symbol": "v8::internal::Heap::AddRetainedMap+2452"
+    },
+    {
+      "pc": "0x00007ff7ec1fafbd",
+      "symbol": "v8::internal::Factory::NewFillerObject+61"
+    },
+    {
+      "pc": "0x00007ff7ebf61871",
+      "symbol": "v8::internal::interpreter::JumpTableTargetOffsets::iterator::operator=+1665"
+    },
+    {
+      "pc": "0x00007ff7ec776c4d",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+546637"
+    },
+    {
+      "pc": "0x00000145fcd3d125",
+      "symbol": ""
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 2164551680,
+    "totalCommittedMemory": 2164551680,
+    "usedMemory": 2125945592,
+    "availableMemory": 45355136,
+    "memoryLimit": 2197815296,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 262144,
+        "committedMemory": 262144,
+        "capacity": 32808,
+        "used": 32808,
+        "available": 0
+      },
+      "new_space": {
+        "memorySize": 11534336,
+        "committedMemory": 11534336,
+        "capacity": 5761008,
+        "used": 1412920,
+        "available": 4348088
+      },
+      "old_space": {
+        "memorySize": 1950232576,
+        "committedMemory": 1950232576,
+        "capacity": 1926382288,
+        "used": 1924399864,
+        "available": 1982424
+      },
+      "code_space": {
+        "memorySize": 3837952,
+        "committedMemory": 3837952,
+        "capacity": 3271872,
+        "used": 3271872,
+        "available": 0
+      },
+      "map_space": {
+        "memorySize": 4198400,
+        "committedMemory": 4198400,
+        "capacity": 2618640,
+        "used": 2618640,
+        "available": 0
+      },
+      "large_object_space": {
+        "memorySize": 193290240,
+        "committedMemory": 193290240,
+        "capacity": 193123600,
+        "used": 193123600,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 1196032,
+        "committedMemory": 1196032,
+        "capacity": 1085888,
+        "used": 1085888,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 5761008,
+        "used": 0,
+        "available": 5761008
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 2261.26,
+    "kernelCpuSeconds": 123.078,
+    "cpuConsumptionPercent": 2.2869,
+    "maxRss": 2185596928,
+    "pageFaults": {
+      "IORequired": 8316777,
+      "IONotRequired": 0
+    },
+    "fsActivity": {
+      "reads": 10205,
+      "writes": 6274
+    }
+  },
+  "libuv": [
+  ],
+  "workers": [
+  ],
+  "environmentVariables": {
+    "=C:": "C:\\WorkSpace\\nextjs-projects\\feyrep",
+    "ALLUSERSPROFILE": "C:\\ProgramData",
+    "APPDATA": "C:\\Users\\Nzakicodes\\AppData\\Roaming",
+    "CHROME_CRASHPAD_PIPE_NAME": "\\\\.\\pipe\\crashpad_5112_MWHBVIJZQVNVLWGE",
+    "COLORTERM": "truecolor",
+    "COMMONPROGRAMFILES": "C:\\Program Files\\Common Files",
+    "CommonProgramFiles(x86)": "C:\\Program Files (x86)\\Common Files",
+    "CommonProgramW6432": "C:\\Program Files\\Common Files",
+    "COMPUTERNAME": "TAQUALABS",
+    "COMSPEC": "C:\\WINDOWS\\system32\\cmd.exe",
+    "C_EM64T_REDIST11": "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Files\\cpp\\",
+    "EXEPATH": "C:\\laragon\\bin\\git\\bin",
+    "GIT_ASKPASS": "c:\\Users\\Nzakicodes\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\extensions\\git\\dist\\askpass.sh",
+    "HOME": "C:\\Users\\Nzakicodes",
+    "HOMEDRIVE": "C:",
+    "HOMEPATH": "\\Users\\Nzakicodes",
+    "INIT_CWD": "C:\\WorkSpace\\nextjs-projects\\feyrep",
+    "LANG": "en_US.UTF-8",
+    "LOCALAPPDATA": "C:\\Users\\Nzakicodes\\AppData\\Local",
+    "LOGONSERVER": "\\\\MicrosoftAccount",
+    "MSYSTEM": "MINGW64",
+    "NODE": "C:\\Program Files\\nodejs\\node.exe",
+    "NODE_ENV": "development",
+    "npm_config_argv": "{\"remain\":[],\"cooked\":[\"run\",\"dev\"],\"original\":[\"dev\"]}",
+    "npm_config_bin_links": "true",
+    "npm_config_ignore_optional": "",
+    "npm_config_ignore_scripts": "",
+    "npm_config_init_license": "MIT",
+    "npm_config_init_version": "1.0.0",
+    "npm_config_registry": "https://registry.yarnpkg.com",
+    "npm_config_save_prefix": "^",
+    "npm_config_strict_ssl": "true",
+    "npm_config_user_agent": "yarn/1.22.4 npm/? node/v12.16.3 win32 x64",
+    "npm_config_version_commit_hooks": "true",
+    "npm_config_version_git_message": "v%s",
+    "npm_config_version_git_sign": "",
+    "npm_config_version_git_tag": "true",
+    "npm_config_version_tag_prefix": "v",
+    "npm_execpath": "C:\\Users\\Nzakicodes\\AppData\\Roaming\\npm\\node_modules\\yarn\\bin\\yarn.js",
+    "npm_lifecycle_event": "dev",
+    "npm_lifecycle_script": "next dev",
+    "npm_node_execpath": "C:\\Program Files\\nodejs\\node.exe",
+    "npm_package_dependencies_global": "^4.4.0",
+    "npm_package_dependencies_next": "10.0.7",
+    "npm_package_dependencies_react": "17.0.1",
+    "npm_package_dependencies_react_dom": "17.0.1",
+    "npm_package_dependencies_serve": "^11.3.2",
+    "npm_package_devDependencies_autoprefixer": "^10.2.4",
+    "npm_package_devDependencies_postcss": "^8.2.6",
+    "npm_package_devDependencies_tailwindcss": "^2.0.3",
+    "npm_package_name": "feyrep",
+    "npm_package_private": "true",
+    "npm_package_readmeFilename": "README.md",
+    "npm_package_scripts_build": "next build",
+    "npm_package_scripts_dev": "next dev",
+    "npm_package_scripts_start": "next start",
+    "npm_package_version": "0.1.0",
+    "NUMBER_OF_PROCESSORS": "4",
+    "OneDrive": "C:\\Users\\Nzakicodes\\OneDrive",
+    "OneDriveConsumer": "C:\\Users\\Nzakicodes\\OneDrive",
+    "ORIGINAL_XDG_CURRENT_DESKTOP": "undefined",
+    "OS": "Windows_NT",
+    "PATH": "C:\\Users\\NZAKIC~1\\AppData\\Local\\Temp\\yarn--1614226888957-0.48739054485287703;C:\\WorkSpace\\nextjs-projects\\feyrep\\node_modules\\.bin;C:\\Users\\Nzakicodes\\AppData\\Local\\Yarn\\Data\\link\\node_modules\\.bin;C:\\Users\\Nzakicodes\\AppData\\Local\\Yarn\\bin;C:\\Program Files\\libexec\\lib\\node_modules\\npm\\bin\\node-gyp-bin;C:\\Program Files\\lib\\node_modules\\npm\\bin\\node-gyp-bin;C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\node-gyp-bin;C:\\laragon\\bin\\git\\mingw64\\bin;C:\\laragon\\bin\\git\\usr\\bin;C:\\Users\\Nzakicodes\\bin;C:\\Program Files (x86)\\Common Files\\Intel\\Shared Files\\cpp\\bin\\Intel64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0;C:\\Program Files\\nodejs;C:\\Program Files (x86)\\Git\\cmd;C:\\Users\\Nzakicodes\\.cargo\\bin;C:\\laragon\\bin;C:\\laragon\\bin\\apache\\httpd-2.4.35-win64-VC15\\bin;C:\\laragon\\bin\\composer;C:\\laragon\\bin\\git\\usr\\bin;C:\\laragon\\bin\\git\\cmd;C:\\laragon\\bin\\git\\mingw64\\bin;C:\\laragon\\bin\\git\\usr\\bin;C:\\laragon\\bin\\laragon\\utils;C:\\laragon\\bin\\mysql\\mysql-5.1.72-win32\\bin;C:\\laragon\\bin\\nginx\\nginx-1.14.0;C:\\laragon\\bin\\ngrok;C:\\laragon\\bin\\nodejs\\node-v12;C:\\laragon\\bin\\notepad++;C:\\laragon\\bin\\php\\php7.4.6;C:\\laragon\\bin\\putty;C:\\laragon\\bin\\redis\\redis-x64-3.2.100;C:\\laragon\\bin\\telnet;C:\\laragon\\usr\\bin;C:\\Users\\Nzakicodes\\AppData\\Local\\Yarn\\config\\global\\node_modules\\.bin;C:\\Users\\Nzakicodes\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Nzakicodes\\AppData\\Roaming\\npm;C:\\Users\\Nzakicodes\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Program Files\\JetBrains\\WebStorm 2019.2\\bin;C:\\Users\\Nzakicodes\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\Nzakicodes\\AppData\\Local\\atom\\bin;C:\\Users\\Nzakicodes\\AppData\\Local\\hyper\\app-3.0.2\\resources\\bin;C:\\Program Files\\heroku\\bin;C:\\Program Files\\Theme;C:\\Program Files\\MongoDB\\Server\\4.2\\bin;C:\\Program Files (x86)\\GitHub CLI",
+    "PATHEXT": ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JSE;.WSF;.WSH;.MSC",
+    "PLINK_PROTOCOL": "ssh",
+    "PROCESSOR_ARCHITECTURE": "AMD64",
+    "PROCESSOR_IDENTIFIER": "Intel64 Family 6 Model 37 Stepping 5, GenuineIntel",
+    "PROCESSOR_LEVEL": "6",
+    "PROCESSOR_REVISION": "2505",
+    "ProgramData": "C:\\ProgramData",
+    "PROGRAMFILES": "C:\\Program Files",
+    "ProgramFiles(x86)": "C:\\Program Files (x86)",
+    "ProgramW6432": "C:\\Program Files",
+    "PROMPT": "$P$G",
+    "PSModulePath": "C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules\\",
+    "PUBLIC": "C:\\Users\\Public",
+    "PWD": "C:/WorkSpace/nextjs-projects/feyrep",
+    "SHLVL": "2",
+    "SYSTEMDRIVE": "C:",
+    "SYSTEMROOT": "C:\\WINDOWS",
+    "TEMP": "C:\\Users\\NZAKIC~1\\AppData\\Local\\Temp",
+    "TERM": "cygwin",
+    "TERM_PROGRAM": "vscode",
+    "TERM_PROGRAM_VERSION": "1.53.2",
+    "TMP": "C:\\Users\\NZAKIC~1\\AppData\\Local\\Temp",
+    "USERDOMAIN": "TAQUALABS",
+    "USERDOMAIN_ROAMINGPROFILE": "TAQUALABS",
+    "USERNAME": "Nzakicodes",
+    "USERPROFILE": "C:\\Users\\Nzakicodes",
+    "VSCODE_GIT_ASKPASS_MAIN": "c:\\Users\\Nzakicodes\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\extensions\\git\\dist\\askpass-main.js",
+    "VSCODE_GIT_ASKPASS_NODE": "C:\\Users\\Nzakicodes\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe",
+    "VSCODE_GIT_IPC_HANDLE": "\\\\.\\pipe\\vscode-git-d26e9ba3f6-sock",
+    "WebStorm": "C:\\Program Files\\JetBrains\\WebStorm 2019.2\\bin;",
+    "WINDIR": "C:\\WINDOWS",
+    "YARN_WRAP_OUTPUT": "false",
+    "_": "C:/Program Files/nodejs/node"
+  },
+  "sharedObjects": [
+    "C:\\Program Files\\nodejs\\node.exe",
+    "C:\\WINDOWS\\SYSTEM32\\ntdll.dll",
+    "C:\\WINDOWS\\system32\\KERNEL32.DLL",
+    "C:\\WINDOWS\\system32\\KERNELBASE.dll",
+    "C:\\WINDOWS\\system32\\WS2_32.dll",
+    "C:\\WINDOWS\\system32\\sechost.dll",
+    "C:\\WINDOWS\\system32\\RPCRT4.dll",
+    "C:\\WINDOWS\\SYSTEM32\\dbghelp.dll",
+    "C:\\WINDOWS\\system32\\msvcrt.dll",
+    "C:\\WINDOWS\\system32\\NSI.dll",
+    "C:\\WINDOWS\\system32\\PSAPI.DLL",
+    "C:\\WINDOWS\\system32\\ADVAPI32.dll",
+    "C:\\WINDOWS\\system32\\USER32.dll",
+    "C:\\WINDOWS\\system32\\GDI32.dll",
+    "C:\\WINDOWS\\system32\\CRYPT32.dll",
+    "C:\\WINDOWS\\system32\\MSASN1.dll",
+    "C:\\WINDOWS\\SYSTEM32\\USERENV.dll",
+    "C:\\WINDOWS\\system32\\profapi.dll",
+    "C:\\WINDOWS\\SYSTEM32\\bcrypt.dll",
+    "C:\\WINDOWS\\SYSTEM32\\WINMM.dll",
+    "C:\\WINDOWS\\SYSTEM32\\WINMMBASE.dll",
+    "C:\\WINDOWS\\system32\\cfgmgr32.dll",
+    "C:\\WINDOWS\\SYSTEM32\\DEVOBJ.dll",
+    "C:\\WINDOWS\\SYSTEM32\\IPHLPAPI.DLL",
+    "C:\\WINDOWS\\SYSTEM32\\WINNSI.DLL",
+    "C:\\WINDOWS\\system32\\IMM32.DLL",
+    "C:\\WINDOWS\\system32\\MSCTF.dll",
+    "C:\\WINDOWS\\system32\\powrprof.dll",
+    "C:\\WINDOWS\\SYSTEM32\\CRYPTBASE.DLL",
+    "C:\\WINDOWS\\SYSTEM32\\bcryptPrimitives.dll",
+    "C:\\WINDOWS\\system32\\uxtheme.dll",
+    "C:\\WINDOWS\\system32\\combase.dll",
+    "C:\\WINDOWS\\system32\\mswsock.dll",
+    "C:\\WINDOWS\\system32\\kernel.appcore.dll",
+    "C:\\WINDOWS\\SYSTEM32\\dhcpcsvc6.DLL",
+    "C:\\WINDOWS\\SYSTEM32\\dhcpcsvc.DLL",
+    "C:\\WINDOWS\\system32\\napinsp.dll",
+    "C:\\WINDOWS\\system32\\pnrpnsp.dll",
+    "C:\\WINDOWS\\system32\\NLAapi.dll",
+    "C:\\WINDOWS\\SYSTEM32\\DNSAPI.dll",
+    "C:\\WINDOWS\\System32\\winrnr.dll",
+    "C:\\WINDOWS\\system32\\wshbth.dll",
+    "C:\\Windows\\System32\\rasadhlp.dll",
+    "C:\\WINDOWS\\System32\\fwpuclnt.dll"
+  ]
+}

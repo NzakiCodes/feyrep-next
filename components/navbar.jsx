@@ -33,8 +33,12 @@ const Navbar = ({activeBtn}) => {
                     </div>
                 </div>
                 <div className="sm:col-span-7 lg:hidden ">
-                    <div className="my-8  px-8">
-                        <a href="" className="btn btn-primary">SB</a>
+                    <div className="my-2  px-8">
+                        <a href="" className="btn text-primary">
+                            {/* <i className="mdi mdi-hamburger text-5xl"></i> */}
+                            <div className="dropdown-trigger__item"></div>
+
+                        </a>
                     </div>
                 </div>
             </div>

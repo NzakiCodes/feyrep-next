@@ -10,15 +10,16 @@ export default function Home() {
       <Head>
         <title>FEYReP</title>
         <link rel="icon" href="/favicon.ico" />
+        <link rel="stylesheet" href="/mdi/css/materialdesignicons.min.css"/>
       </Head>
 
       <main>
         <Navbar activeBtn="home"/>
         <div className="p-10"/>
         <Header/>
+
       </main>
-      {/* <img src="/images/logo-icon.png" alt="FEYReP logo" /> */}
-      <img src="/_next/static//images/img-hero.jpg" alt="FEYReP lll "/>
+
     </div>
   )
 }

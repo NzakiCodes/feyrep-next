@@ -1,4 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&family=Quicksand:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&family=Quicksand:wght@500;600;700;800&display=swap");
+@font-face{
+  font-family: Storytella;
+  src: url("fonts/Storytella.otf");
+}
+
 :root {
   --primary-color: #42093f;
   --secondary-color: #80a316;
@@ -21,14 +26,23 @@ body {
 .nav-buttons a {
   @apply px-4 py-8 hover:text-primary-200;
 }
-.fw-donate-btn, .nav-buttons a {
+.fw-donate-btn,
+.nav-buttons a {
   font-weight: 500 !important;
   text-transform: uppercase;
-  font-family: "Quicksand", sans-serif;
+
   font-size: 14px;
 }
+.fw-donate-btn,
+.nav-buttons a,
+.font-quicksand {
+  font-family: "Quicksand", sans-serif;
+}
+.font-storytella{
+  font-family: Storytella, sans-serif;
+}
 .fw-donate-btn {
-  @apply sm:text-base transition px-6 py-3  border-primary-200 text-primary-200 border rounded-3xl hover:border-primary hover:text-primary
+  @apply sm:text-base transition px-6 py-3  border-primary-200 text-primary-200 border rounded-3xl hover:border-primary hover:text-primary;
 }
 .nav-buttons a:not(.home-btn) {
   @apply border-b-2 border-transparent hover:border-primary transition;
@@ -45,6 +59,44 @@ body {
 
 .fw-header-hero {
   @apply bg-cover object-center w-screen h-auto;
+}
+
+.dropdown-trigger__item {
+  position: relative;
+}
+.dropdown-trigger__item::after,
+.dropdown-trigger__item::before {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+}
+.dropdown-trigger__item,
+.dropdown-trigger__item::after,
+.dropdown-trigger__item::before {
+  background: #282a43;
+  height: 2px;
+  -webkit-transition: opacity 0.3s;
+  -o-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+@media only screen and (min-width: 992px) {
+  .dropdown-trigger__item,
+  .dropdown-trigger__item::after,
+  .dropdown-trigger__item::before {
+    background: #fff;
+  }
+}
+.dropdown-trigger__item,
+.dropdown-trigger__item::before {
+  width: 27px;
+}
+.dropdown-trigger__item::before {
+  top: 7px;
+}
+.dropdown-trigger__item::after {
+  width: 21px;
+  top: 14px;
 }
 
 @tailwind base;
