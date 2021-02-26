@@ -1,4 +1,4 @@
-const Navbar = ({activeBtn}) => {
+const Navbar = ({ activeBtn }) => {
     return (
         <div className="z-50 fixed w-full bg-white   shadow-lg">
             {/* <h1 className="text font-medium text-2xl">FEYReP</h1> */}
@@ -10,13 +10,13 @@ const Navbar = ({activeBtn}) => {
                         <img className="fw-logo" src="/images/logo-icon.png" alt="FEYReP logo" />
                     </div>
                     <div className="col-span-8">
-                        <h1 className="fw-logo-text text-3xl m-auto">FEY<span className="text-gray-500">ReP</span></h1>
-                    </div> 
+                        <h1 className="fw-logo-text text-3xl m-auto" title="FAMILY EMPOWERMENT & Youth Reorientation Path Initiative">FEY<span className="text-gray-500">ReP</span></h1>
+                    </div>
                 </div>
                 <div className="hidden lg:block  ">
                     <div className="justify-items-center grid  grid-flow-col lg:gap-0 xl:gap-1 place-items-center font-normal nav-buttons transition-all">
-                        <a className={`${activeBtn =="home" && 'border-primary border-b-2 home-btn '}`} href="#">Home</a>
-                        <a className={`${activeBtn =="about-us" && 'border-primary border-b-2 home-btn'}`} href="#">About</a>
+                        <a className={`${activeBtn == "home" && 'border-primary border-b-2 home-btn '}`} href="#">Home</a>
+                        <a className={`${activeBtn == "about-us" && 'border-primary border-b-2 home-btn'}`} href="#">About</a>
                         <a href="#">Projects</a>
                         <a href="#">Media</a>
                         <a href="#">Publications</a>
@@ -27,7 +27,7 @@ const Navbar = ({activeBtn}) => {
                 <div className=" hidden xl:block xlg:col-span-1">
                     <div className="ml-12">
                         <a href="/donate" className="px-14 py-8 inline-block hover:scale-90 transform transition bg-primary text-white hover:bg-primary-200">
-                            {/* <span className=" inline-block hover:scale-150 transform transition"></span> */}Donate Now 
+                            {/* <span className=" inline-block hover:scale-150 transform transition"></span> */}Donate Now
                         </a>
                         {/* <a href="/donate" className="fw-donate-btn hover:text-secondary-200 hover:border-secondary-200">Donate Now</a> */}
                     </div>
