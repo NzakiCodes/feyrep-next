@@ -1,3 +1,4 @@
+import { HoverableCard } from 'components/cards';
 import Section from 'components/sections';
 import Head from 'next/head';
 import Header from '../components/header';
@@ -20,7 +21,9 @@ export default function Home() {
         <Header/>
         <Section>
           <p>
-          The determination to add value to the lives of the poor and The determination to add value to the lives of the poor and The determination to add value to the lives of the poor and The determination to add value to the lives of the poor and 
+            <HoverableCard>
+              Hello
+            </HoverableCard>
           </p>
         </Section>
       </main>
