@@ -8,6 +8,9 @@
   --primary-color: #42093f;
   --secondary-color: #80a316;
 }
+html,body{
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Poppins", sans-serif !important;
 }

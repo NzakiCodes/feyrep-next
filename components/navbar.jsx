@@ -4,8 +4,8 @@ const Navbar = ({ activeBtn }) => {
             {/* <h1 className="text font-medium text-2xl">FEYReP</h1> */}
             <div className="bg-primary py-5 px-12 hidden">
             </div>
-            <div className=" flex flex-row justify-between lg:justify-center fw-container sm:gap-10 md:gap-0" >
-                <div className="py-3 px-4  md:px-6 flex">
+            <div className=" flex flex-row justify-between r fw-container sm:gap-10 md:gap-0" >
+                <div className="py-3 px-4  md:px-4 flex">
                     <div className="col-span-5 xlg:col-span-4 p-1 ">
                         <img className="fw-logo" src="/images/logo-icon.png" alt="FEYReP logo" />
                     </div>

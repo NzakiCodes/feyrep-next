@@ -4,7 +4,7 @@ const Header = () => (
     <div class="relative h-screen ">
         <div className="absolute inset-0 w-full h-full object-cover object-center z-30 bg-opacity-80 bg-black ">
             <div className="flex justify-center">
-                <div className=" md:container m-auto max-h-11 py-10 md:mt-20 text-center">
+                <div className="container m-auto max-h-11 py-10 md:mt-20 text-center">
                     <h1 className="md:text-7xl text-5xl text-white font-extrabold font-quicksand">
                         We help all people in need
                     </h1>
@@ -12,7 +12,7 @@ const Header = () => (
                         In the Society.
                     </h2>
 
-                    <div className="container text-white opacity-90 ">
+                    <div className="container text-white opacity-90 hidden">
                         <p className="font-quicksand text-lg px-2">
                             The determination to add value to the lives of the poor and vulnerable members of the <br className="hidden md:block" /> society drives our sustainable people-centric empowerment programs,...
                          </p>
@@ -30,6 +30,7 @@ const Header = () => (
             </div>
         </div>
         <img className="absolute inset-0 w-full h-full object-cover object-center z-10" src="/images/img-hero.JPG" alt="WomanBeach" />
+       
     </div>
 );
 
