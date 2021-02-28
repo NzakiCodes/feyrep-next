@@ -12,7 +12,7 @@ const Header = () => (
                         In the Society.
                     </h2>
 
-                    <div className="container text-white opacity-90 hidden">
+                    <div className="container text-white opacity-90 ">
                         <p className="font-quicksand text-lg px-2">
                             The determination to add value to the lives of the poor and vulnerable members of the <br className="hidden md:block" /> society drives our sustainable people-centric empowerment programs,...
                          </p>
