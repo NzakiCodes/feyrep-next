@@ -63,7 +63,11 @@ export default function Home() {
                       The Right To Rise. A Project For The Physically Challenged To Reduce Inequality
                       Shelter Of Hope- Shelter Project For The Poor"
                     />
-                  </dl>
+                   
+                  </dl> 
+                  <div className="my-14 text-center">
+                        <a href="/projects" className="btn  mt-9 px-16 rounded-full border-primary-200 text-gray-900  hover:bg-primary-200 border-2 tracking-wider font-quicksand hover:text-white ">Explore</a>
+                    </div>
                 </div>
               </div>
             </div>
