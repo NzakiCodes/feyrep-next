@@ -24,15 +24,15 @@ export default function Home() {
           <Section>
             <div className="py-12 ">
               <div className="max-w-7xl  ">
-                <div className="lg:text-center">
+                <div className="md:text-center">
                   <h2 className="text-base text-primary-600 font-semibold tracking-wide uppercase">What we do</h2>
-                  <p className="mt-2 lg:text-6xl leading-8 font-extrabold font-quicksand  tracking-tight text-gray-900 text-4xl">
+                  <p className="mt-2 md:text-5xl lg:text-6xl leading-8 font-extrabold font-quicksand  tracking-tight text-gray-900 text-4xl">
                   We do it <span className="font-normal">for all people</span>
                   </p>
                   
                 </div>
                 <div className="mt-16">
-                  <dl className="space-y-10 md:space-y-0 md:grid md:grid-cols-3 text-center md:gap-x-8 md:gap-y-10">
+                  <dl className="space-y-10 md:space-y-0 md:grid md:grid-cols-2 lg:grid-cols-3 text-center md:gap-x-8 md:gap-y-10">
                     <FeatureCard
                       
                       image="/images/what we do/1_blood.svg"
