@@ -1,7 +1,7 @@
 const Section = ({children})=>(
-    <div className="fw-container mx-auto px-4 py-8">
+    <section className="fw-container mx-auto px-4 py-8">
         {children}
-    </div>
+    </section>
 );
 
 export default Section

@@ -7,6 +7,7 @@
 :root {
   --primary-color: #42093f;
   --secondary-color: #80a316;
+  --primary-color-600: #e016d7;
 }
 html,body{
   scroll-behavior: smooth;
