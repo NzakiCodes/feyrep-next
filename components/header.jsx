@@ -1,8 +1,8 @@
 
 
 const Header = () => (
-    <div class="relative h-screen ">
-        <div className="absolute inset-0 w-full h-full object-cover object-center z-30 bg-opacity-80 bg-red-500 ">
+    <div className="relative h-screen ">
+        <div className="absolute inset-0 w-full h-full object-cover object-center z-30 bg-opacity-80 bg-black ">
             <div className="flex justify-center">
                 <div className="container m-auto max-h-11 py-10 md:mt-20 text-center">
                     <h1 className="md:text-7xl text-5xl text-white font-extrabold font-quicksand">
