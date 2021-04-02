@@ -35,7 +35,7 @@ export default function Home({ header }) {
         <link rel="stylesheet" href="/mdi/css/materialdesignicons.min.css" />
       </Head>
 
-      <main>
+      <main className="relative w-full">
         <Navbar activeBtn="home" />
         <div className="p-10" />
         <Header />
@@ -99,14 +99,14 @@ export default function Home({ header }) {
               <NewsFlashCard img={"/images/DSC_0909.JPG"} />
             </div>
           </Section>
-          <Section className="container">
-            <div className="text-center my-2 py-5">
-              <div className="title py-10">
-                <h2 className="text-lg font-bitter font-extrabold mb-4 text-primary-600"> Projects</h2>
-                <h3 className="text-5xl font-bitter capitalize font-extrabold">Educational Interventions </h3>
+          <Section className="fw-container lg:container">
+            <div className="text-center my-2 py-3 lg:py-5 mb-7">
+              <div className="title py-3 lg:py-10">
+                <h2 className="text-xl  lg:text-lg font-bitter font-extrabold mb-4 text-primary-600"> Projects</h2>
+                <h3 className="text-3xl lg:text-5xl font-bitter capitalize font-extrabold">Educational Interventions </h3>
               </div>
             </div>
-            <Grid className="grid-cols-1 md:grid-cols-3 gap-7 mx-auto w-full">
+            <Grid className="grid-cols-1 md:grid-cols-3 md:gap-7 mx-auto w-full">
               <NewsCard img={img1} title="Bright Future for responsible boys." date="January 3, 2019" description="This is FEYReP's Advocacy Programme for the boy child. It is targetted at sensitizing the boy child on the dangers of drug... " />
               <NewsCard img={img1} title="Bright Future for responsible boys." date="January 3, 2019" description="This is FEYReP's Advocacy Programme for the boy child. It is targetted at sensitizing the boy child on the dangers of drug... " />
               <NewsCard img={img1} title="Bright Future for responsible boys." date="January 3, 2019" description="This is FEYReP's Advocacy Programme for the boy child. It is targetted at sensitizing the boy child on the dangers of drug... " />
