@@ -2,7 +2,7 @@ const Navbar = ({ activeBtn }) => {
     return (
         <div className="z-50 fixed w-full bg-white   shadow-lg">
             {/* <h1 className="text font-medium text-2xl">FEYReP</h1> */}
-            <div className="bg-primary py-5 px-12 hidden">
+            <div className="bg-primary py-5 px-12 ">
             </div>
             <div className=" flex flex-row justify-between r fw-container sm:gap-10 md:gap-0" >
                 <div className="py-3 px-4  md:px-4 flex">
@@ -21,12 +21,12 @@ const Navbar = ({ activeBtn }) => {
                         <a href="#">Media</a>
                         <a href="#">Publications</a>
                         <a href="#">Donations</a>
-                        <a href="#">News</a>
+                        <a href="/news">News</a>
                     </div>
                 </div>
                 <div className=" hidden xl:block xlg:col-span-1">
-                    <div className="ml-12">
-                        <a href="/donate" className="px-14 py-8 inline-block hover:scale-90 transform transition bg-primary text-white hover:bg-primary-200">
+                    <div className="ml-12 my-3">
+                        <a href="/donate" className="px-12 py-4 inline-block rounded-full hover:bg-transparent hover:text-primary transition bg-primary text-white border-primary-200 border-2">
                             {/* <span className=" inline-block hover:scale-150 transform transition"></span> */}Donate Now
                         </a>
                         {/* <a href="/donate" className="fw-donate-btn hover:text-secondary-200 hover:border-secondary-200">Donate Now</a> */}

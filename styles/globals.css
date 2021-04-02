@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&family=Quicksand:wght@500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bitter:wght@800&family=Poppins:wght@200;300;400;500;600;700&family=Quicksand:wght@500;600;700;800&display=swap");
 @font-face{
   font-family: Storytella;
   src: url("fonts/Storytella.otf");
@@ -44,6 +44,9 @@ body {
 }
 .font-storytella{
   font-family: Storytella, sans-serif;
+}
+.font-bitter{
+  font-family: 'Bitter', serif;
 }
 .fw-donate-btn {
   @apply sm:text-base transition px-6 py-3  border-primary-200 text-primary-200 border rounded-3xl hover:border-primary hover:text-primary;
@@ -101,6 +104,14 @@ body {
 .dropdown-trigger__item::after {
   width: 21px;
   top: 14px;
+}
+.hoverable-card >img{
+  transform: scale(1);
+  transition: all 0.5s 0.2s;
+}
+.hoverable-card:hover >img{
+  transform: scale(1.2);
+  transition: all 0.5s 0.2s;
 }
 
 @tailwind base;
