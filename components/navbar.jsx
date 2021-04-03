@@ -2,7 +2,21 @@ const Navbar = ({ activeBtn }) => {
     return (
         <div className="z-50 fixed w-full bg-white   shadow-lg">
             {/* <h1 className="text font-medium text-2xl">FEYReP</h1> */}
-            <div className="bg-primary py-5 px-12 ">
+            <div className="bg-primary py-1 px-12 ">
+                <div className="flex flex-row w-full">
+                    <div className="px-2">
+                        <a href="https://twitter.com/feyrep" target="_blank">
+                            <span className="mdi mdi-twitter text-white"></span>
+                        </a>
+                    </div>
+                    <div className="px-2 ">
+                        <a href="https://www.facebook.com/feyrep" target="_blank">
+                            <span className="mdi mdi-facebook text-white"></span>
+                        </a>
+                    </div>
+
+
+                </div>
             </div>
             <div className=" flex flex-row justify-between r fw-container sm:gap-10 md:gap-0" >
                 <div className="py-3 px-4  md:px-4 flex">

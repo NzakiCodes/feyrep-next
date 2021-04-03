@@ -124,6 +124,16 @@ export default function Home({ header }) {
               <Card border img={img1} title="Bright Future for responsible boys." date="January 3, 2019" description="This is FEYReP's Advocacy Programme for the boy child. It is targetted at sensitizing the boy child on the dangers of drug... " />
             </Grid>
           </Section>
+          <Section >
+            <Grid className="grid-cols-2 gap-x-4">
+              <div>
+                <img src="/images/sections/children-3319460_1920.jpg" alt="Children" />
+              </div>
+              <div>
+              <img src="/images/sections/children-3319460_1920.jpg" alt="Children" />
+              </div>
+            </Grid>
+          </Section>
           <Section fullWidth fullHeight className="container px-7 m-auto lg:px-14 bg-white">
             <div className="py-12 ">
               <div className="max-w-7xl  ">
@@ -176,6 +186,7 @@ export default function Home({ header }) {
             </div>
 
           </Section>
+         
         </div>
       </main>
 
