@@ -1,13 +1,12 @@
-import { useEffect } from 'react';
+import React, { useEffect } from 'react';
 import axios from 'axios'
-import { FeatureCard } from 'components/cards';
-import { NewsCard } from 'components/cards';
-import Section from 'components/sections';
+import { Card, FeatureCard, InfoCard, NewsFlashCard } from 'components/cards';
+import Section, { SectionTitle } from 'components/sections';
 import Head from 'next/head';
 import Header from '../components/header';
 import Navbar from '../components/navbar';
-import { NewsFlashCard } from 'components/cards';
 import { Grid } from 'components/grid';
+import Slider from "react-slick";
 
 export async function getStaticProps() {
   var data = 0;
@@ -26,7 +25,43 @@ export async function getStaticProps() {
 const img1 = { src: "/images/img-hero.JPG" }
 
 export default function Home({ header }) {
-  console.log("header:" + header);
+  // console.log("header:" + header);
+  const sliderSettings = {
+    dots: false,
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    speed: 1000,
+    autoplaySpeed: 3500,
+    cssEase: "linear",
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  }
   return (
     <div >
       <Head>
@@ -40,7 +75,56 @@ export default function Home({ header }) {
         <div className="p-10" />
         <Header />
         <div>
-          <Section className="bg-gray-100">
+          <Section fullWidth className="container mb-14 relative h-80 ">
+            <InfoCard />
+          </Section>
+          <Section fullHeight fullWidth className="bg-white my-14" style={{ overflow: "hidden" }}>
+            <Slider {...sliderSettings} className="grid sm:grid-flow-col md:grid-flow-row grid-cols-1 md:grid-cols-3  relative gap-0 w-full">
+              <NewsFlashCard img={"/images/img-hero.JPG"}>
+                <div className=" pr-4 lg:text-left flex flex-col text-center lg:flex-row lg:border-r-2 border-gray-200">
+                  <div className="text-6xl col-span-5 px-10">
+                    <span class="flaticon-button text-red-600"></span>
+                  </div>
+                  <div className="content col-span-7">
+                    <h3 className="text-lg font-bold mb-0.5 pb-0.5 ">Helping Mankind</h3>
+                    <span className="bg-red-600 inline-block  mb-4 px-10" style={{ padding: "1px 2px 1px 25px" }}></span>
+                    <p className="text-base font-sans text-gray-700">Auis nostrud exercitation ullam labor aliquip exsed consequat duis autpsum dolore magna aliqua minim</p>
+                  </div>
+                </div>
+              </NewsFlashCard>
+              <NewsFlashCard img={"/images/IMG_001.JPG"} />
+              <NewsFlashCard img={"/images/DSC_0909.JPG"} />
+              <NewsFlashCard img={"/images/img-hero.JPG"} />
+              <NewsFlashCard img={"/images/IMG_001.JPG"} />
+              <NewsFlashCard img={"/images/DSC_0909.JPG"} />
+            </Slider>
+          </Section>
+          <Section fullWidth className="lg:px-24  px-14 my-16" style={{ background: "url(/images/sections/text-section_2.png) top right no-repeat" }}>
+
+            <SectionTitle title={"Ongoing Projects"} subtitle="Educational Interventions" />
+            <Grid className="containers text-center grid-cols-1 md:grid-cols-3 md:gap-7 gap-y-4 mx-auto w-full">
+              <Card img={img1} title="Bright Future for responsible boys." description="This is FEYReP's Advocacy Programme for the boy child. It is targetted at sensitizing the boy child on the dangers of drug... " />
+              <Card img={img1} title="Bright Future for responsible boys." description="This is FEYReP's Advocacy Programme for the boy child. It is targetted at sensitizing the boy child on the dangers of drug... " />
+              <Card img={img1} title="Bright Future for responsible boys." description="This is FEYReP's Advocacy Programme for the boy child. It is targetted at sensitizing the boy child on the dangers of drug... " />
+            </Grid>
+          </Section>
+
+          <Section fullWidth fullHeight className="" style={{ background: "url(/images/sections/children-3319460_1920.jpg) center no-repeat fixed", backgroundSize: "cover" }}>
+            <div className="w-full h-full py-60 " style={{ background: "rgba(0,0,0,0.89)" }}>
+              ee
+            </div>
+          </Section>
+          <Section fullWidth fullHeight className="container py-10 px-7 lg:px-14  my-14" style={{ background: "url(/images/sections/events_bg.png) top left no-repeat bg-contain", backgroundSize: "contain" }}>
+
+            <SectionTitle title={"Latest News"} subtitle="Educational Interventions" />
+
+            <Grid className="grid-cols-1 md:grid-cols-3 md:gap-7 gap-y-4 mx-auto w-full">
+              <Card border img={img1} title="Bright Future for responsible boys." date="January 3, 2019" description="This is FEYReP's Advocacy Programme for the boy child. It is targetted at sensitizing the boy child on the dangers of drug... " />
+              <Card border img={img1} title="Bright Future for responsible boys." date="January 3, 2019" description="This is FEYReP's Advocacy Programme for the boy child. It is targetted at sensitizing the boy child on the dangers of drug... " />
+              <Card border img={img1} title="Bright Future for responsible boys." date="January 3, 2019" description="This is FEYReP's Advocacy Programme for the boy child. It is targetted at sensitizing the boy child on the dangers of drug... " />
+            </Grid>
+          </Section>
+          <Section fullWidth fullHeight className="container px-7 m-auto lg:px-14 bg-white">
             <div className="py-12 ">
               <div className="max-w-7xl  ">
                 <div className="md:text-center">
@@ -91,37 +175,6 @@ export default function Home({ header }) {
               </div>
             </div>
 
-          </Section>
-          <Section fullWidth fullHeight className="bg-white">
-            <div className="grid sm:grid-flow-col md:grid-flow-row grid-cols-1 md:grid-cols-3  relative gap-0 ">
-              <NewsFlashCard img={"/images/img-hero.JPG"} />
-              <NewsFlashCard img={"/images/IMG_001.JPG"} />
-              <NewsFlashCard img={"/images/DSC_0909.JPG"} />
-            </div>
-          </Section>
-          <Section className="sm:container lg:container">
-            <div className="text-center my-2 py-3 lg:py-5 mb-7">
-              <div className="title py-3 lg:py-10">
-                <h2 className="text-xl  lg:text-lg font-bitter font-extrabold mb-4 text-primary-600"> Projects</h2>
-                <h3 className="text-3xl lg:text-5xl font-bitter capitalize font-extrabold">Educational Interventions </h3>
-              </div>
-            </div>
-            <Grid className="grid-cols-1 md:grid-cols-3 md:gap-7 gap-y-4 mx-auto w-full">
-              <NewsCard img={img1} title="Bright Future for responsible boys." date="January 3, 2019" description="This is FEYReP's Advocacy Programme for the boy child. It is targetted at sensitizing the boy child on the dangers of drug... " />
-              <NewsCard img={img1} title="Bright Future for responsible boys." date="January 3, 2019" description="This is FEYReP's Advocacy Programme for the boy child. It is targetted at sensitizing the boy child on the dangers of drug... " />
-              <NewsCard img={img1} title="Bright Future for responsible boys." date="January 3, 2019" description="This is FEYReP's Advocacy Programme for the boy child. It is targetted at sensitizing the boy child on the dangers of drug... " />
-            </Grid>
-          </Section>
-          <Section className="container">
-            <div className="text-center my-5">
-              <div className="title py-10">
-                <h2 className="text-xl font-bitter font-extrabold mb-2">Latest News</h2>
-                <h3 className="text-3xl font-bitter font-extrabold">EDUCATIONAL INTERVENTION </h3>
-              </div>
-            </div>
-          </Section>
-          <Section fullWidth className="py-10 h-96" style={{background:"url(/images/sections/text-section_2.png) top right no-repeat"}}>
-         
           </Section>
         </div>
       </main>
