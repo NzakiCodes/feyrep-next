@@ -83,7 +83,7 @@ export default function Home({ header }) {
               <NewsFlashCard img={"/images/img-hero.JPG"}>
                 <div className=" pr-4 lg:text-left flex flex-col text-center lg:flex-row lg:border-r-2 border-gray-200">
                   <div className="text-6xl col-span-5 px-10">
-                    <span class="flaticon-button text-red-600"></span>
+                    <span className="flaticon-button text-red-600"></span>
                   </div>
                   <div className="content col-span-7">
                     <h3 className="text-lg font-bold mb-0.5 pb-0.5 ">Helping Mankind</h3>
@@ -110,8 +110,15 @@ export default function Home({ header }) {
           </Section>
 
           <Section fullWidth fullHeight className="" style={{ background: "url(/images/sections/children-3319460_1920.jpg) center no-repeat fixed", backgroundSize: "cover" }}>
-            <div className="w-full h-full py-60 " style={{ background: "rgba(0,0,0,0.89)" }}>
-              ee
+            <div className="w-full h-full py-14 lg:px-10" style={{ background: "rgba(0,0,0,0.89)" }}>
+            <Grid className="grid-cols-2 gap-x-4">
+              <div className="rounded-lg">
+                <img className="rounded-lg" src="/images/sections/children-3319460_1920.jpg" alt="Children" />
+              </div>
+              <div>
+              {/* <img src="/images/sections/children-3319460_1920.jpg" alt="Children" /> */}
+              </div>
+            </Grid>
             </div>
           </Section>
           <Section fullWidth fullHeight className="py-10 px-14 lg:px-14  my-14" style={{ background: "url(/images/sections/events_bg.png) top left no-repeat bg-contain", backgroundSize: "contain" }}>
@@ -126,8 +133,8 @@ export default function Home({ header }) {
           </Section>
           <Section >
             <Grid className="grid-cols-2 gap-x-4">
-              <div>
-                <img src="/images/sections/children-3319460_1920.jpg" alt="Children" />
+              <div className="rounded-lg">
+                <img className="rounded-lg" src="/images/sections/children-3319460_1920.jpg" alt="Children" />
               </div>
               <div>
               <img src="/images/sections/children-3319460_1920.jpg" alt="Children" />

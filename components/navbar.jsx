@@ -1,20 +1,40 @@
+import Link from 'next/link';
+
 const Navbar = ({ activeBtn }) => {
     return (
         <div className="z-50 fixed w-full bg-white   shadow-lg">
             {/* <h1 className="text font-medium text-2xl">FEYReP</h1> */}
-            <div className="bg-primary py-1 px-12 ">
-                <div className="flex flex-row w-full">
-                    <div className="px-2">
-                        <a href="https://twitter.com/feyrep" target="_blank">
-                            <span className="mdi mdi-twitter text-white"></span>
-                        </a>
-                    </div>
-                    <div className="px-2 ">
-                        <a href="https://www.facebook.com/feyrep" target="_blank">
-                            <span className="mdi mdi-facebook text-white"></span>
-                        </a>
-                    </div>
+            <div className="bg-primary py-2 lg:px-12 ">
+                <div className="flex flex-row justify-between w-full container px-10">
+                    <div className="contact col-span-4 flex flex-row">
+                        <div className="px-2  text-white">
+                            <a href="tel:+234000000001" target="_blank">
+                                <span className="mdi mdi-phone"></span>
+                                <span className="hidden lg:inline"> +234000000001</span>
+                            </a>
+                        </div>
 
+                        <div className="px-2  text-white">
+                            <a href="mailto:info@feyrep.org.ng" target="_blank">
+                                <span className="mdi mdi-gmail"></span>
+                                <span className="hidden lg:inline"> info@feyrep.org.ng</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div className="social flex flex-row col-span-4">   </div>
+                   
+                    <div className="social flex flex-row col-span-4">
+                        <div className="px-2">
+                            <a href="https://twitter.com/feyrep" target="_blank">
+                                <span className="mdi mdi-twitter text-white"></span>
+                            </a>
+                        </div>
+                        <div className="px-2 ">
+                            <a href="https://www.facebook.com/feyrep" target="_blank">
+                                <span className="mdi mdi-facebook text-white"></span>
+                            </a>
+                        </div>
+                    </div>
 
                 </div>
             </div>
@@ -29,13 +49,30 @@ const Navbar = ({ activeBtn }) => {
                 </div>
                 <div className="hidden lg:block  ">
                     <div className="justify-items-center grid  grid-flow-col lg:gap-0 xl:gap-1 place-items-center font-normal nav-buttons transition-all">
-                        <a className={`${activeBtn == "home" && 'border-primary border-b-2 home-btn '}`} href="#">Home</a>
-                        <a className={`${activeBtn == "about-us" && 'border-primary border-b-2 home-btn'}`} href="#">About</a>
-                        <a href="#">Projects</a>
-                        <a href="#">Media</a>
-                        <a href="#">Publications</a>
-                        <a href="#">Donations</a>
-                        <a href="/news">News</a>
+                        <Link href="/">
+                            <a className={`${activeBtn == "home" && 'border-primary border-b-2 home-btn '}`}>Home</a>
+                        </Link>
+                        <Link href="/about">
+                            <a className={`${activeBtn == "about-us" && 'border-primary border-b-2 home-btn'}`}>About</a>
+                        </Link>
+                        <Link href="/projects">
+                            <a className={`${activeBtn == "about-us" && 'border-primary border-b-2 home-btn'}`}>Projects</a>
+                        </Link>
+
+                        <Link href="/media">
+                            <a>Media</a>
+                        </Link>
+
+                        <Link href="/publications">
+                            <a>Publications</a>
+                        </Link>
+
+                        <Link href="/donate">
+                            <a>Donations</a>
+                        </Link>
+                        <Link href="/news">
+                            <a className={`${activeBtn == "news" && 'border-primary border-b-2 home-btn'}`}>News</a>
+                        </Link>
                     </div>
                 </div>
                 <div className=" hidden xl:block xlg:col-span-1">
