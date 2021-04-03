@@ -75,7 +75,7 @@ export default function Home({ header }) {
         <div className="p-10" />
         <Header />
         <div>
-          <Section fullWidth className="container mb-14 relative h-80 ">
+          <Section fullWidth className="container lg:mb-14 lg:relative lg:h-80 ">
             <InfoCard />
           </Section>
           <Section fullHeight fullWidth className="bg-white my-14" style={{ overflow: "hidden" }}>
@@ -114,11 +114,11 @@ export default function Home({ header }) {
               ee
             </div>
           </Section>
-          <Section fullWidth fullHeight className="container py-10 px-7 lg:px-14  my-14" style={{ background: "url(/images/sections/events_bg.png) top left no-repeat bg-contain", backgroundSize: "contain" }}>
+          <Section fullWidth fullHeight className="py-10 px-14 lg:px-14  my-14" style={{ background: "url(/images/sections/events_bg.png) top left no-repeat bg-contain", backgroundSize: "contain" }}>
 
             <SectionTitle title={"Latest News"} subtitle="Educational Interventions" />
 
-            <Grid className="grid-cols-1 md:grid-cols-3 md:gap-7 gap-y-4 mx-auto w-full">
+            <Grid className="container px-10 grid-cols-1 md:grid-cols-3 md:gap-7 gap-y-4 mx-auto w-full">
               <Card border img={img1} title="Bright Future for responsible boys." date="January 3, 2019" description="This is FEYReP's Advocacy Programme for the boy child. It is targetted at sensitizing the boy child on the dangers of drug... " />
               <Card border img={img1} title="Bright Future for responsible boys." date="January 3, 2019" description="This is FEYReP's Advocacy Programme for the boy child. It is targetted at sensitizing the boy child on the dangers of drug... " />
               <Card border img={img1} title="Bright Future for responsible boys." date="January 3, 2019" description="This is FEYReP's Advocacy Programme for the boy child. It is targetted at sensitizing the boy child on the dangers of drug... " />

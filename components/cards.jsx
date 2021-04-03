@@ -48,34 +48,34 @@ const infoCardStyle = {
     zIndex: 30
 }
 export const InfoCard = () => (
-    <div className="bg-white py-14 px-10 shadow-2xl rounded-lg grid lg:grid-flow-row space-y-8 lg:space-y-0 lg:grid-cols-3 sm:grid-flow-col sm:grid-cols-1" style={infoCardStyle}>
+    <div className="bg-white lg:-top-12 z-30 lg:absolute py-14 lg:py-16 px-10 lg:shadow-lg rounded-lg grid lg:grid-flow-row space-y-8 lg:space-y-0 lg:grid-cols-3 sm:grid-flow-col sm:grid-cols-1" >
         <div className=" pr-4 lg:text-left flex flex-col text-center lg:flex-row lg:border-r-2 border-gray-200">
-            <div className="text-6xl col-span-5 px-10">
-                <span class="flaticon-button text-red-600"></span>
+            <div className="text-6xl col-span-5 px-10 " style={{background:"url(/images/bg-flare.png) no-repeat",backgroundSize:"contain", backgroundPosition:"left 0px"}}>
+                <span class="flaticon-doctor text-primary-600"></span>
             </div>
             <div className="content col-span-7">
-                <h3 className="text-lg font-bold mb-0.5 pb-0.5 ">Helping Mankind</h3>
-                <span className="bg-red-600 inline-block  mb-4 px-10" style={{ padding: "1px 2px 1px 25px" }}></span>
+                <h3 className="text-lg font-bold mb-0.5 pb-0.5 ">Health Intervention</h3>
+                <span className="bg-primary-600 inline-block  mb-4 px-10" style={{ padding: "1px 2px 1px 25px" }}></span>
                 <p className="text-base font-sans text-gray-700">Auis nostrud exercitation ullam labor aliquip exsed consequat duis autpsum dolore magna aliqua minim</p>
             </div>
         </div>
         <div className=" pr-4 lg:text-left flex flex-col text-center lg:flex-row lg:border-r-2 border-gray-200">
-            <div className="text-6xl col-span-5 px-10">
-                <span class="flaticon-button text-red-600"></span>
+        <div className="text-6xl col-span-5 px-10 " style={{background:"url(/images/bg-flare.png) no-repeat",backgroundSize:"contain", backgroundPosition:"left 0px"}}>
+                <span class="flaticon-cancer text-primary-600"></span>
             </div>
             <div className="content col-span-7">
-                <h3 className="text-lg font-bold mb-0.5 pb-0.5 ">Helping Mankind</h3>
-                <span className="bg-red-600 inline-block  mb-4 px-10" style={{ padding: "1px 2px 1px 25px" }}></span>
+                <h3 className="text-lg font-bold mb-0.5 pb-0.5 ">Education</h3>
+                <span className="bg-primary-600 inline-block  mb-4 px-10" style={{ padding: "1px 2px 1px 25px" }}></span>
                 <p className="text-base font-sans text-gray-700">Auis nostrud exercitation ullam labor aliquip exsed consequat duis autpsum dolore magna aliqua minim</p>
             </div>
         </div>
         <div className=" pr-4 lg:text-left flex flex-col text-center lg:flex-row">
-            <div className="text-6xl col-span-5 px-10">
-                <span class="flaticon-button text-red-600"></span>
+        <div className="text-6xl col-span-5 px-10 " style={{background:"url(/images/bg-flare.png) no-repeat",backgroundSize:"contain", backgroundPosition:"left 0px"}}>
+                <span class="flaticon-love-and-romance text-primary-600"></span>
             </div>
             <div className="content col-span-7">
-                <h3 className="text-lg font-bold mb-0.5 pb-0.5 ">Helping Mankind</h3>
-                <span className="bg-red-600 inline-block  mb-4 px-10" style={{ padding: "1px 2px 1px 25px" }}></span>
+                <h3 className="text-lg font-bold mb-0.5 pb-0.5 ">Social Welfare</h3>
+                <span className="bg-primary-600 inline-block  mb-4 px-10" style={{ padding: "1px 2px 1px 25px" }}></span>
                 <p className="text-base font-sans text-gray-700">Auis nostrud exercitation ullam labor aliquip exsed consequat duis autpsum dolore magna aliqua minim</p>
             </div>
         </div>
