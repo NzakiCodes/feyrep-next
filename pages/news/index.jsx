@@ -1,6 +1,6 @@
 import Navbar from "components/navbar";
 import Head from "next/head";
-import { CoverHeader } from "components/Header";
+import { CoverHeader } from "../../components/header";
 import Link from "next/link";
 import Layout from "components/layout";
 
