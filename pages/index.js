@@ -7,13 +7,14 @@ import Header from '../components/header';
 import Navbar from '../components/navbar';
 import { Grid } from 'components/grid';
 import Slider from "react-slick";
+import Layout from 'components/layout';
 
 export async function getStaticProps() {
   var data = 0;
-  // axios
-  //   .get("http://localhost:8055/items/news")
-  //   .then(res => data = res.data.data)
-  //   .catch(err => console.error(err));
+  axios
+    .get("http://localhost:8055/items/news")
+    .then(res => data = res.data.data)
+    .catch(err => console.error(err));
 
   return {
     props: {
@@ -25,7 +26,7 @@ export async function getStaticProps() {
 const img1 = { src: "/images/img-hero.JPG" }
 
 export default function Home({ header }) {
-  // console.log("header:" + header);
+  console.log( header);
   const sliderSettings = {
     dots: false,
     infinite: true,
@@ -63,34 +64,24 @@ export default function Home({ header }) {
     ]
   }
   return (
-    <div >
-      <Head>
-        <title>FEYReP</title>
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="stylesheet" href="/mdi/css/materialdesignicons.min.css" />
-      </Head>
-
-      <main className="relative w-full">
-        <Navbar activeBtn="home" />
-        <div className="p-10" />
-        <Header />
-        <div>
+    <Layout home>
+      <div>
           <Section fullWidth className="container lg:mb-14 lg:relative lg:h-80 ">
             <InfoCard />
           </Section>
-          <Section className="container">
-            <Grid className="grid-cols-2 gap-x-7">
-              <div className="relative h-96">
+          <Section fullWidth fullHeight className="px-4 lg:container">
+            <Grid className="grid-cols-1 gap-x0 lg:grid-cols-2 lg:gap-x-7">
+              <div className="relatdive  lg:h-96">
                 <div className="">
                   <img className="rounded-lg" src="/images/sections/GBV_001.JPG" alt="Children" />
                 </div>
               </div>
               <div>
-                <div className="max-w-lg py-7 px-4 text-left">
+                <div className="max-w-lg mt-20 md:mt-0 lg:py-7 px-2 lg:px-4 text-left">
                   <span className="bg-primary-600 block  mt-0 mb-0 px-10 w-4" style={{ padding: "1px 2px 1px 35px" }}></span>
-                  <span className="bg-primary-600 block  mb-6 mt-1 px-10 w-5" style={{ padding: "1px 2px 1px 70px" }}></span>
-                  <h3 className=" text-5xl font-bold  mb-2 pb-0.5 ">Gender Based Violence (GBV).</h3>
-                  <p className="text-xl font-normal font-quicksand text-gray-800">Despite the global outrage against Gender Based Violence and its attendant physical, emotional and psychological consequences on survivors, their families and the larger community...</p>
+                  <span className="bg-primary-600 block  mb-4 mt-1 px-10 w-5" style={{ padding: "1px 2px 1px 70px" }}></span>
+                  <h3 className="text-xl md:text-3xl lg:text-4xl font-bold  mb-2 pb-0.5 ">Gender Based Violence (GBV).</h3>
+                  <p className="text-base lg:text-xl font-normal font-quicksand text-gray-800">Despite the global outrage against Gender Based Violence and its attendant physical, emotional and psychological consequences on survivors, their families and the larger community...</p>
                   <div className="py-5 mt-2">
                     <a href="/donate" className="px-12 font-quicksand py-3 inline-block rounded-full hover:bg-transparent text-white hover:text-primary-200 font-bold text-md uppercase transition border-primary-200  bg-primary-200 border-2">Know More.</a>
                   </div>
@@ -113,8 +104,8 @@ export default function Home({ header }) {
                   </div>
                 </div>
               </NewsFlashCard>
-              <NewsFlashCard img={"/images/IMG_001.JPG"} />
-              <NewsFlashCard img={"/images/DSC_0909.JPG"} />
+              <NewsFlashCard title="Free Eye Surgery" text="FEYReP in partnership with MTN Foundation Eyesight Restoration Intervention Scheme (MTNF EyeRIS) conducted eye care outreach benefitting at least 6,000 persons. " img={"/images/IMG_001.JPG"} />
+              <NewsFlashCard title="Free Surgical Care" text="Also noteworthy is the free surgical care recently organized by FEYReP in collaboration with Pro-Health International and Akwa Ibom State Association of Nigeria... " img={"/images/DSC_0909.JPG"} />
               <NewsFlashCard img={"/images/img-hero.JPG"} />
               <NewsFlashCard img={"/images/IMG_001.JPG"} />
               <NewsFlashCard img={"/images/DSC_0909.JPG"} />
@@ -163,13 +154,13 @@ export default function Home({ header }) {
               <Card border img={img1} title="Bright Future for responsible boys." date="January 3, 2019" description="This is FEYReP's Advocacy Programme for the boy child. It is targetted at sensitizing the boy child on the dangers of drug... " />
             </Grid>
           </Section>
-          <Section fullWidth fullHeight>
+          <Section fullWidth fullHeight className="h-full bg-primary my-10">
             <Grid className="grid-cols-1 lg:grid-cols-2 ">
               <div className="">
-                <img src="/images/sections/children-3319460_1920.jpg" alt="Children" />
+                <img src="/images/sections/pregnacare.JPG" alt="Children" />
               </div>
-              <div>
-                <img src="/images/sections/children-3319460_1920.jpg" alt="Children" />
+              <div className="px-10 py-14">
+               
               </div>
             </Grid>
           </Section>
@@ -237,8 +228,8 @@ export default function Home({ header }) {
           </Section>
 
         </div>
-      </main>
+      
 
-    </div>
+    </Layout>
   )
 }

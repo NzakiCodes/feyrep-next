@@ -1,3 +1,4 @@
+import Section from "./sections";
 
 
 const Header = () => (
@@ -30,8 +31,26 @@ const Header = () => (
             </div>
         </div>
         <img className="absolute inset-0 w-full h-full object-cover object-center z-10" src="/images/img-hero.JPG" alt="WomanBeach" />
-       
+
     </div>
 );
+export const CoverHeader = ({title}) => (
+    <div>
+        <Section fullWidth fullHeight className="h-96" style={{ background: "url(/images/sections/children-3319460_1920.jpg) center no-repeat fixed", backgroundSize: "cover" }}>
+            <div className="w-full h-full py-14 lg:px-24 text-center" style={{ background: "rgba(0, 0, 0, 0.9)" }}>
+                <h1 className="py-28 font-bold font-mono text-white text-6xl lg:text-7xl">{title}</h1>
+            </div>
+        </Section>
+    </div>
+);
+export const NewsHeader = ({image}) => (
+    <div>
+        <Section className="container" >
+            <div className="lg:px-24 flex justify-center text-center">
+                <img className="h-96" src={`${image?image:"/images/sections/children-3319460_1920.jpg"}`} alt=""/>
+            </div>
+        </Section>
+    </div>
+)
 
 export default Header;

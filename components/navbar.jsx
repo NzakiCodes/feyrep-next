@@ -1,5 +1,6 @@
 import Link from 'next/link';
 
+
 const Navbar = ({ activeBtn }) => {
     return (
         <div className="z-50 fixed w-full bg-white   shadow-lg">
@@ -96,5 +97,7 @@ const Navbar = ({ activeBtn }) => {
         </div>
     )
 }
-
+/* Navbar.propTypes = {
+    activeBtn: PropTypes.string,
+} */
 export default Navbar
