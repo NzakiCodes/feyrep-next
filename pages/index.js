@@ -75,7 +75,7 @@ export default function Home({ header }) {
           <InfoCard />
         </Section>
         <Section fullWidth fullHeight className="px-4 lg:container">
-          <Grid className="grid-cols-1 gap-x0 lg:grid-cols-2 lg:gap-x-7">
+          <Grid className="container lg:px-10 grid-cols-1 md:grid-cols-2 md:gap-7 gap-y-4 lg:mx-auto w-full">
             <div className="relatdive  lg:h-96">
               <div className="">
                 <img className="rounded-lg" src="/images/sections/GBV_001.JPG" alt="Children" />
@@ -99,15 +99,15 @@ export default function Home({ header }) {
           <Slider {...sliderSettings} className="grid sm:grid-flow-col md:grid-flow-row grid-cols-1 md:grid-cols-3  relative gap-0 w-full">
             <NewsFlashCard title="Free Eye Surgery" text="FEYReP in partnership with MTN Foundation Eyesight Restoration Intervention Scheme (MTNF EyeRIS) conducted eye care outreach benefitting at least 6,000 persons. " img={"/images/IMG_001.JPG"} />
             <NewsFlashCard title="Free Surgical Care" text="Also noteworthy is the free surgical care recently organized by FEYReP in collaboration with Pro-Health International and Akwa Ibom State Association of Nigeria... " img={"/images/DSC_0909.JPG"} />
-            <NewsFlashCard title="Free De-Worming Exercise" text="FEYReP partnered with Niemeth International Pharmaceuticals Plc to implement a de-worming exercise in the state through a school health care programme and over fifteen thousand benefitted from the initiative.  " img={"/images/healthcare/deworming.jpg"} />
-            <NewsFlashCard title="Martha's Pregnacare" text="As part of efforts to reduce infant morbidity and maternal mortality in the state, more than 300 expectant mothers' from the 31 Local Government Areas of the State have benefited from the third phase of free medical care..." img={"/images/healthcare/martha_pregnacare.jpg"} />
-            <NewsFlashCard title="Support for persons with disability" text="Provision of mobility aids and financial assistance to more than 300 persons with disability. Providing financial and material support to inmates of Leprosy hospital, Ekpene Obom, Etinan. " img={"/images/healthcare/disability.jpg"} />
+            <NewsFlashCard title="Free De-Worming Exercise" text="FEYReP partnered with Niemeth International Pharmaceuticals Plc to implement a de-worming exercise in the state through a school health care programme and over...  " img={"/images/healthcare/deworming.jpg"} />
+            <NewsFlashCard title="Martha's Pregnacare" text="As part of efforts to reduce infant morbidity and maternal mortality in the state, more than 300 expectant mothers' from the 31 Local Government Areas of the State have..." img={"/images/healthcare/martha_pregnacare.jpg"} />
+            <NewsFlashCard title="Support for persons with disability" text="Provision of mobility aids and financial assistance to more than 300 persons with disability. Providing financial and material support to inmates of Leprosy... " img={"/images/healthcare/disability.jpg"} />
           </Slider>
         </Section>
         <Section fullWidth className="py-10 px-8 lg:px-14  my-14" style={{ background: "url(/images/sections/text-section_2.png) top right no-repeat" }}>
 
           <SectionTitle title={"Ongoing Projects"} subtitle="Educational Interventions" />
-          <Grid className="containers text-center grid-cols-1 md:grid-cols-3 md:gap-7 gap-y-4 mx-auto w-full">
+          <Grid className="container lg:px-10 grid-cols-1 md:grid-cols-3 md:gap-7 gap-y-4 lg:mx-auto w-full">
             <Card img={eduProject.girls} title="Girls uphold your dignity." description="It is generally believed that women are central to community development, therefore education of the girl-child cannot be over-emphasized." />
             <Card img={eduProject.boys} title="Bright Future for responsible boys." description="This is FEYReP's Advocacy Programme for the boy child. It is targetted at sensitizing the boy child on the dangers of drug... " />
             <Card img={eduProject.bts} title="Back To School" description="Education they say is invaluable. Therefore, FEYReP's BACK TO SCHOOL project is focused on re-kitting school children with personal... " />
@@ -137,7 +137,7 @@ export default function Home({ header }) {
             </Grid>
           </div>
         </Section>
-        <Section fullWidth fullHeight className="py-10 px-8 lg:px-14  my-14" style={{ background: "url(/images/sections/events_bg.png) top left no-repeat bg-contain", backgroundSize: "contain" }}>
+        <Section fullWidth fullHeight className="py-28 px-8 lg:px-14  " style={{ background: "url(/images/sections/events_bg.png) top left no-repeat ", backgroundSize: "contain" }}>
 
           <SectionTitle title={"Latest News"} subtitle="" />
 

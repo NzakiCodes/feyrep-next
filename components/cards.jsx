@@ -13,7 +13,7 @@ export const NewsFlashCard = ({ title, img, children, text }) => (
         <div className="absolute z-20 w-full h-full " style={{ backgroundColor: "rgba(0, 0, 0, 0.63)" }}>
             <div className=" p-14 text-left relative">
 
-                <div className=" absolute left-14 max-w-xs" style={{ top: "90px" }}>
+                <div className=" absolute left-14 max-w-xs" style={{ top: "80px" }}>
                     <h3 className="text-xs uppercase font-bold  mb-2 pb-0.5 text-white">{title}</h3>
                     <p className="text-md lg:text-sm font-sans text-white">{text}</p>
                     <span className="bg-secondary-200 block  mt-4 mb-0 px-10 w-1" style={{ padding: "1px 2px 1px 15px" }}></span>
