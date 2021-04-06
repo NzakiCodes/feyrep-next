@@ -110,11 +110,11 @@ export default function Home() {
         <Section fullWidth fullHeight className="" style={{ background: "url(/images/sections/children-3319460_1920.jpg) center no-repeat fixed", backgroundSize: "cover" }}>
           <div className="w-full h-full lg:py-14 lg:px-24" style={{ background: "rgba(0,0,0,0.89)" }}>
             <Grid className=" grid-cols-1 lg:grid-cols-2 lg:gap-x-7">
-              <Slider {...boySliderSettings} className="max-h-96 overflow-hidden lg:py-10">
+              <Slider {...boySliderSettings} className=" max-h-64 md:max-h-96 overflow-hidden lg:py-10">
                 <img className="lg:rounded-lg" src="/images/stories/destiny/IMG_9598.jpg" alt="Children" />
                 <img className="lg:rounded-lg" src="/images/stories/destiny/IMG-20200113-WA0038.jpg" alt="Children" />
               </Slider>
-              <div>
+              <div>Nzakiblue
                 <div className="max-w-lg py-6 px-4 text-left">
                   <span className="bg-secondary-200 block  mt-0 mb-0 px-10 w-1" style={{ padding: "1px 2px 1px 15px" }}></span>
                   <span className="bg-secondary-200 block  mb-6 mt-1 px-10 w-2" style={{ padding: "1px 2px 1px 30px" }}></span>

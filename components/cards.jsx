@@ -13,7 +13,7 @@ export const NewsFlashCard = ({ title, img, children, text }) => (
         <div className="absolute z-20 w-full h-full " style={{ backgroundColor: "rgba(0, 0, 0, 0.63)" }}>
             <div className=" p-14 text-left relative">
 
-                <div className=" absolute left-14 max-w-xs" style={{ top: "80px" }}>
+                <div className=" absolute left-14 max-w-xs" style={{ top: "90px" }}>
                     <h3 className="text-xs uppercase font-bold  mb-2 pb-0.5 text-white">{title}</h3>
                     <p className="text-md lg:text-sm font-sans text-white">{text}</p>
                     <span className="bg-secondary-200 block  mt-4 mb-0 px-10 w-1" style={{ padding: "1px 2px 1px 15px" }}></span>
@@ -51,7 +51,7 @@ export const InfoCard = () => (
     <div className="bg-white lg:-top-12 z-30 lg:absolute py-14 lg:py-16 px-10 lg:shadow-lg rounded-lg grid lg:grid-flow-row space-y-8 lg:space-y-0  lg:grid-cols-3 md:grid-flow-col md:grid-cols-1" >
         <div className=" pr-4 lg:text-left flex flex-col text-center lg:flex-row lg:border-r-2 border-gray-200">
             <div className="text-6xl col-span-5 px-10 " style={{ background: "url(/images/bg-flare.png) no-repeat", backgroundSize: "contain", backgroundPosition: "left 0px" }}>
-                <span className="flaticon-doctor text-primary-600"></span>
+                <span class="flaticon-doctor text-primary-600"></span>
             </div>
             <div className="content col-span-7">
                 <h3 className="text-lg font-bold mb-0.5 pb-0.5 ">Health Intervention</h3>
@@ -61,7 +61,7 @@ export const InfoCard = () => (
         </div>
         <div className=" pr-4 lg:text-left flex flex-col text-center lg:flex-row lg:border-r-2 border-gray-200">
             <div className="text-6xl col-span-5 px-10 " style={{ background: "url(/images/bg-flare.png) no-repeat", backgroundSize: "contain", backgroundPosition: "left 0px" }}>
-                <span className="flaticon-cancer text-primary-600"></span>
+                <span class="flaticon-cancer text-primary-600"></span>
             </div>
             <div className="content col-span-7">
                 <h3 className="text-lg font-bold mb-0.5 pb-0.5 ">Education</h3>
@@ -71,7 +71,7 @@ export const InfoCard = () => (
         </div>
         <div className=" pr-4 lg:text-left flex flex-col text-center lg:flex-row">
             <div className="text-6xl col-span-5 px-10 " style={{ background: "url(/images/bg-flare.png) no-repeat", backgroundSize: "contain", backgroundPosition: "left 0px" }}>
-                <span className="flaticon-love-and-romance text-primary-600"></span>
+                <span class="flaticon-love-and-romance text-primary-600"></span>
             </div>
             <div className="content col-span-7">
                 <h3 className="text-lg font-bold mb-0.5 pb-0.5 ">Social Welfare</h3>
