@@ -1,11 +1,11 @@
+import { PagesHeader } from "components/header";
 import Layout from "components/layout";
-import Navbar from "components/navbar";
-import Head from "next/head";
 
 export default function About(){
     return(
-       <Layout pageTitle="About">
-           
+       <Layout pageTitle="About" >
+           <PagesHeader img="/images/IMG-2244.jpg"/>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A accusamus quas itaque odio laudantium nemo eligendi doloribus! Sint cum voluptatem consectetur earum at, similique accusamus animi deserunt ipsam, iusto eius.</p>
        </Layout>
     )
 }

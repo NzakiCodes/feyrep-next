@@ -113,7 +113,35 @@ body {
   transform: scale(1.2);
   transition: all 0.5s 0.2s;
 }
+.wave-leaf {
+  background: url('/images/wave-yellow-leaf_v4.svg');
+  background-repeat: repeat-x;
 
+  width: 6400px;
+  height: 120px;
+  -webkit-animation: wavingflag 12s cubic-bezier(.36, .45, .63, .53) infinite;
+  animation: wavingflag 12s cubic-bezier(.36, .45, .63, .53) infinite;
+}
+
+@-webkit-keyframes wavingflag {
+  0% {
+    margin-left: 0;
+  }
+
+  100% {
+    margin-left: -1600px;
+  }
+}
+
+@keyframes wavingflag {
+  0% {
+    margin-left: 0;
+  }
+
+  100% {
+    margin-left: -1600px;
+  }
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

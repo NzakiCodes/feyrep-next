@@ -24,29 +24,21 @@ export async function getStaticProps() {
 export default function News({ data }) {
 
     return (
-        <Layout>
-            <Head>
-                <title>FeyRep|News</title>
-            </Head>
-            <main>
-                <Navbar activeBtn="news" />
-                <div className="p-10" />
-                <CoverHeader title="News" />
-                {
-                    data && data.map((news_item) => {
-                        const { id, title } = news_item;
-                        return (
-                            <li key={id}>
-                                <Link href={`/news/${id}`}>
-                                    <a>{title}</a>
-                                </Link>
-                            </li>
-                        )
-                    }
-
+        <Layout pageTitle="News">
+            {
+                data && data.map((news_item) => {
+                    const { id, title } = news_item;
+                    return (
+                        <li key={id}>
+                            <Link href={`/news/${id}`}>
+                                <a>{title}</a>
+                            </Link>
+                        </li>
                     )
                 }
-            </main>
+
+                )
+            }
         </Layout>
     )
 }

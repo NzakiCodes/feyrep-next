@@ -34,7 +34,7 @@ const Header = () => (
 
     </div>
 );
-export const CoverHeader = ({title}) => (
+export const CoverHeader = ({ title }) => (
     <div>
         <Section fullWidth fullHeight className="h-96" style={{ background: "url(/images/sections/children-3319460_1920.jpg) center no-repeat fixed", backgroundSize: "cover" }}>
             <div className="w-full h-full py-14 lg:px-24 text-center" style={{ background: "rgba(0, 0, 0, 0.9)" }}>
@@ -43,14 +43,21 @@ export const CoverHeader = ({title}) => (
         </Section>
     </div>
 );
-export const NewsHeader = ({image}) => (
+export const NewsHeader = ({ image }) => (
     <div>
         <Section className="container" >
             <div className="lg:px-24 flex justify-center text-center">
-                <img className="h-96" src={`${image?image:"/images/sections/children-3319460_1920.jpg"}`} alt=""/>
+                <img className="h-96" src={`${image ? image : "/images/sections/children-3319460_1920.jpg"}`} alt="" />
             </div>
-        </Section>
+        </Section> 
     </div>
-)
+);
+export const PagesHeader = ({ img }) => {
+    return (
+        <div className=" overflow-hidden relative" style={{background:"url("+img+") no-repeat",backgroundSize:"cover",height:"90vh"}}>
+           <div className="wave-leaf absolute bottom-0"></div>
+        </div>
+    )
+}
 
 export default Header;
