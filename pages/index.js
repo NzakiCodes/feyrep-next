@@ -9,19 +9,19 @@ import { Grid } from 'components/grid';
 import Slider from "react-slick";
 import Layout from 'components/layout';
 
-export async function getStaticProps() {
-  var data = 0;
-  axios
-    .get("http://localhost:8055/items/news")
-    .then(res => data = res.data.data)
-    .catch(err => console.error(err));
+// export async function getStaticProps() {
+//   var data = 0;
+//   axios
+//     .get("http://localhost:8055/items/news")
+//     .then(res => data = res.data.data)
+//     .catch(err => console.error(err));
 
-  return {
-    props: {
-      header: { data }
-    }
-  }
-}
+//   return {
+//     props: {
+//       header: { data }
+//     }
+//   }
+// }
 
 const img1 = { src: "/images/img-hero.JPG" }
 const eduProject = {
@@ -30,8 +30,8 @@ const eduProject = {
   bts: { src: "/images/educational_intervention/IMG_2826.JPG" },
 }
 
-export default function Home({ header }) {
-  console.log(header);
+export default function Home() {
+
   const sliderSettings = {
     dots: false,
     infinite: true,
@@ -68,6 +68,8 @@ export default function Home({ header }) {
       }
     ]
   }
+
+  const boySliderSettings = { ...sliderSettings, slidesToShow: 1 }
   return (
     <Layout home>
       <div>
@@ -104,6 +106,32 @@ export default function Home({ header }) {
             <NewsFlashCard title="Support for persons with disability" text="Provision of mobility aids and financial assistance to more than 300 persons with disability. Providing financial and material support to inmates of Leprosy... " img={"/images/healthcare/disability.jpg"} />
           </Slider>
         </Section>
+        {/* Abandorned Child */}
+        <Section fullWidth fullHeight className="" style={{ background: "url(/images/sections/children-3319460_1920.jpg) center no-repeat fixed", backgroundSize: "cover" }}>
+          <div className="w-full h-full lg:py-14 lg:px-24" style={{ background: "rgba(0,0,0,0.89)" }}>
+            <Grid className=" grid-cols-1 lg:grid-cols-2 lg:gap-x-7">
+              <Slider {...boySliderSettings} className="max-h-96 overflow-hidden lg:py-10">
+                <img className="lg:rounded-lg" src="/images/stories/destiny/IMG_9598.jpg" alt="Children" />
+                <img className="lg:rounded-lg" src="/images/stories/destiny/IMG-20200113-WA0038.jpg" alt="Children" />
+              </Slider>
+              <div>
+                <div className="max-w-lg py-6 px-4 text-left">
+                  <span className="bg-secondary-200 block  mt-0 mb-0 px-10 w-1" style={{ padding: "1px 2px 1px 15px" }}></span>
+                  <span className="bg-secondary-200 block  mb-6 mt-1 px-10 w-2" style={{ padding: "1px 2px 1px 30px" }}></span>
+                  <h3 className="text-3xl lg:text-4xl font-bold  mb-2 pb-0.5 text-white">Child Abandonment is a crime against humanity. </h3>
+                  <p className="text-lg lg:text-xl font-normal font-sans text-white">The story of Destiny who was abandoned by parents and grandparents is a compelling scoop on the human rights abuses of the world's vulnerable children. In Africa, many children from poor communities and families have been abandoned and left to die. </p>
+                  <div className="py-3 mt-1">
+                    <a href="/stories" className="px-9 lg:px-12 py-3 lg:py-4 inline-block rounded-full bg-transparent hover:text-gray-700 font-bold text-md uppercase transition hover:bg-secondary font-quicksand text-white border-secondary-200 border-2">
+                      {/* <span className=" inline-block hover:scale-150 transform transition"></span> */}Read More
+                        </a>
+                    {/* <a href="/donate" className="fw-donate-btn hover:text-secondary-200 hover:border-secondary-200">Donate Now</a> */}
+                  </div>
+                </div>
+              </div>
+            </Grid>
+          </div>
+        </Section>
+
         <Section fullWidth className="py-10 px-8 lg:px-14  my-14" style={{ background: "url(/images/sections/text-section_2.png) top right no-repeat" }}>
 
           <SectionTitle title={"Ongoing Projects"} subtitle="Educational Interventions" />
@@ -153,10 +181,10 @@ export default function Home({ header }) {
               <img src="/images/sections/pregnacare.JPG" alt="Children" />
             </div>
             <div className="px-10 py-10 lg:py-20">
-                <div className="text-center text-white py-10">
-                  <h2 className="text-4xl lg:text-7xl font-bitter capitalize font-extrabold">Martha's Pregnacare</h2>
-                  <p className="text-base lg:text-xl font-sans py-10">According to UNICEF, Africa is losing about 2,300 under-five year olds and 145 women of childbearing age every single day. Nigeria’s maternal and under-five mortality statistics remain among the worst globally. Akwa Ibom as a state is however not immune from this challenge.</p>
-                </div>
+              <div className="text-center text-white py-10">
+                <h2 className="text-4xl lg:text-7xl font-bitter capitalize font-extrabold">Martha's Pregnacare</h2>
+                <p className="text-base lg:text-xl font-sans py-10">According to UNICEF, Africa is losing about 2,300 under-five year olds and 145 women of childbearing age every single day. Nigeria’s maternal and under-five mortality statistics remain among the worst globally. Akwa Ibom as a state is however not immune from this challenge.</p>
+              </div>
             </div>
           </Grid>
         </Section>
