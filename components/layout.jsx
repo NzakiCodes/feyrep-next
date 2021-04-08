@@ -1,10 +1,11 @@
+import Footer from "components/footer";
 import Head from "next/head";
 import Header from "./header";
 import Navbar from "./navbar";
 
-export default function Layout({ children, pageTitle, navlink, home }) {
+export default function Layout({ children, pageTitle, navlink, home, style }) {
     return (
-        <div>
+        <div style={style   }>
             <Head>
                 <title>{pageTitle && pageTitle + " | "}FEYReP</title>
                 <link rel="icon" href="/favicon.ico" />
@@ -17,6 +18,7 @@ export default function Layout({ children, pageTitle, navlink, home }) {
                     home && <Header />
                 }
                 {children}
+                <Footer/>
             </main>
         </div>
     )

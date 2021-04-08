@@ -114,13 +114,12 @@ export default function Home() {
                 <img className="lg:rounded-lg" src="/images/stories/destiny/IMG_9598.jpg" alt="Children" />
                 <img className="lg:rounded-lg" src="/images/stories/destiny/IMG-20200113-WA0038.jpg" alt="Children" />
               </Slider>
-              <div>Nzakiblue
+              <div>
                 <div className="max-w-lg py-6 px-4 text-left">
                   <span className="bg-secondary-200 block  mt-0 mb-0 px-10 w-1" style={{ padding: "1px 2px 1px 15px" }}></span>
                   <span className="bg-secondary-200 block  mb-6 mt-1 px-10 w-2" style={{ padding: "1px 2px 1px 30px" }}></span>
                   <h3 className="text-3xl lg:text-4xl font-bold  mb-2 pb-0.5 text-white">Child Abandonment is a crime against humanity. </h3>
-                  <p className="text-lg lg:text-xl font-normal font-sans text-white">The story of Destiny who was abandoned by parents and grandparents is a compelling scoop on the human rights abuses of the world's vulnerable children. In Africa, many children from poor communities and families have been abandoned and left to die. </p>
-                  <div className="py-3 mt-1">
+                  <p className="text-lg lg:text-xl font-normal font-sans text-white">The story of Destiny who was abandoned by parents and grandparents is a compelling scoop on the human rights abuses of the world's vulnerable children. In Africa, many children from poor communities and families have been abandoned and left to die. </p><div className="py-3 mt-1">
                     <a href="/stories" className="px-9 lg:px-12 py-3 lg:py-4 inline-block rounded-full bg-transparent hover:text-gray-700 font-bold text-md uppercase transition hover:bg-secondary font-quicksand text-white border-secondary-200 border-2">
                       {/* <span className=" inline-block hover:scale-150 transform transition"></span> */}Read More
                         </a>

@@ -51,7 +51,7 @@ export const InfoCard = () => (
     <div className="bg-white lg:-top-12 z-30 lg:absolute py-14 lg:py-16 px-10 lg:shadow-lg rounded-lg grid lg:grid-flow-row space-y-8 lg:space-y-0  lg:grid-cols-3 md:grid-flow-col md:grid-cols-1" >
         <div className=" pr-4 lg:text-left flex flex-col text-center lg:flex-row lg:border-r-2 border-gray-200">
             <div className="text-6xl col-span-5 px-10 " style={{ background: "url(/images/bg-flare.png) no-repeat", backgroundSize: "contain", backgroundPosition: "left 0px" }}>
-                <span class="flaticon-doctor text-primary-600"></span>
+                <span className="flaticon-doctor text-primary-600"></span>
             </div>
             <div className="content col-span-7">
                 <h3 className="text-lg font-bold mb-0.5 pb-0.5 ">Health Intervention</h3>
@@ -61,7 +61,7 @@ export const InfoCard = () => (
         </div>
         <div className=" pr-4 lg:text-left flex flex-col text-center lg:flex-row lg:border-r-2 border-gray-200">
             <div className="text-6xl col-span-5 px-10 " style={{ background: "url(/images/bg-flare.png) no-repeat", backgroundSize: "contain", backgroundPosition: "left 0px" }}>
-                <span class="flaticon-cancer text-primary-600"></span>
+                <span className="flaticon-cancer text-primary-600"></span>
             </div>
             <div className="content col-span-7">
                 <h3 className="text-lg font-bold mb-0.5 pb-0.5 ">Education</h3>
@@ -71,7 +71,7 @@ export const InfoCard = () => (
         </div>
         <div className=" pr-4 lg:text-left flex flex-col text-center lg:flex-row">
             <div className="text-6xl col-span-5 px-10 " style={{ background: "url(/images/bg-flare.png) no-repeat", backgroundSize: "contain", backgroundPosition: "left 0px" }}>
-                <span class="flaticon-love-and-romance text-primary-600"></span>
+                <span className="flaticon-love-and-romance text-primary-600"></span>
             </div>
             <div className="content col-span-7">
                 <h3 className="text-lg font-bold mb-0.5 pb-0.5 ">Social Welfare</h3>

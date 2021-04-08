@@ -54,8 +54,8 @@ export const NewsHeader = ({ image }) => (
 );
 export const PagesHeader = ({ img }) => {
     return (
-        <div className=" overflow-hidden relative" style={{background:"url("+img+") no-repeat",backgroundSize:"cover",height:"90vh"}}>
-           <div className="wave-leaf absolute bottom-0"></div>
+        <div className="lg:-mt-14 overflow-hidden lg:relative lg:h-screen w-full" style={{background:"url("+img+") no-repeat",backgroundSize:"cover"}}>
+           <div className="  mt-32  wave-leaf lg:absolute lg:bottom-0"></div>
         </div>
     )
 }
