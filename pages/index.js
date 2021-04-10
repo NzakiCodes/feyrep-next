@@ -26,7 +26,7 @@ import Layout from 'components/layout';
 const img1 = { src: "/images/img-hero.JPG" }
 const eduProject = {
   boys: { src: "/images/educational_intervention/IMG_8888.JPG" },
-  girls: { src: "/images/educational_intervention/_MG_0140.JPG" },
+  girls: { src: "/images/educational_intervention/_MG_0140.jpg" },
   bts: { src: "/images/educational_intervention/IMG_2826.JPG" },
 }
 
@@ -111,8 +111,8 @@ export default function Home() {
           <div className="w-full h-full lg:py-14 lg:px-24" style={{ background: "rgba(0,0,0,0.89)" }}>
             <Grid className=" grid-cols-1 lg:grid-cols-2 lg:gap-x-7">
               <Slider {...boySliderSettings} className=" max-h-64 md:max-h-96 overflow-hidden lg:py-10">
-                <img className="lg:rounded-lg" src="/images/stories/destiny/IMG_9598.jpg" alt="Children" />
-                <img className="lg:rounded-lg" src="/images/stories/destiny/IMG-20200113-WA0038.jpg" alt="Children" />
+                <img className="lg:rounded-lg" src="/images/stories/destiny/IMG_9598.JPG" alt="Children" />
+                <img className="lg:rounded-lg" src="/images/stories/destiny/IMG-20200113-WA0038.JPG" alt="Children" />
               </Slider>
               <div>
                 <div className="max-w-lg py-6 px-4 text-left">
@@ -134,7 +134,7 @@ export default function Home() {
         <Section fullWidth className="py-10 px-8 lg:px-14  my-14" style={{ background: "url(/images/sections/text-section_2.png) top right no-repeat" }}>
 
           <SectionTitle title={"Ongoing Projects"} subtitle="Educational Interventions" />
-          <Grid className="container lg:px-10 grid-cols-1 md:grid-cols-3 md:gap-7 gap-y-4 lg:mx-auto w-full">
+          <Grid className="container justify-center lg:px-10 grid-cols-1 md:grid-cols-3 md:gap-7 gap-y-4 lg:mx-auto w-full">
             <Card img={eduProject.girls} title="Girls uphold your dignity." description="It is generally believed that women are central to community development, therefore education of the girl-child cannot be over-emphasized." />
             <Card img={eduProject.boys} title="Bright Future for responsible boys." description="This is FEYReP's Advocacy Programme for the boy child. It is targetted at sensitizing the boy child on the dangers of drug... " />
             <Card img={eduProject.bts} title="Back To School" description="Education they say is invaluable. Therefore, FEYReP's BACK TO SCHOOL project is focused on re-kitting school children with personal... " />
