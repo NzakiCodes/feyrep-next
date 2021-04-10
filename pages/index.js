@@ -177,7 +177,7 @@ export default function Home() {
         <Section fullWidth fullHeight className=" bg-primary my-auto overflow-hidden lg:h-screen" >
           <Grid className="grid-cols-1 lg:grid-cols-2 my-auto">
             <div className="">
-              <img src="/images/sections/pregnacare.JPG" alt="Children" />
+              <img src="/images/sections/pregnacare.jpg" alt="Children" />
             </div>
             <div className="px-10 py-10 lg:py-20">
               <div className="text-center text-white py-10">

@@ -1,5 +1,5 @@
 import Link from 'next/link';
-
+import Image from 'next/image';
 
 const Navbar = ({ activeBtn }) => {
     return (
@@ -23,7 +23,7 @@ const Navbar = ({ activeBtn }) => {
                         </div>
                     </div>
                     <div className="social flex flex-row col-span-4">   </div>
-                   
+
                     <div className="social flex flex-row col-span-4">
                         <div className="px-2">
                             <a href="https://twitter.com/feyrep" target="_blank">
@@ -42,7 +42,12 @@ const Navbar = ({ activeBtn }) => {
             <div className=" flex flex-row justify-between r fw-container sm:gap-10 md:gap-0" >
                 <div className="py-3 px-4  md:px-4 flex">
                     <div className="col-span-5 xlg:col-span-4 p-1 ">
-                        <img className="fw-logo" src="/images/logo-icon.png" alt="FEYReP logo" />
+                        <Image
+                            className="fw-logo"
+                            src="/images/logo-icon.png"
+                            width={35}
+                            height={48}
+                            alt="FEYReP logo" />
                     </div>
                     <div className="col-span-8">
                         <h1 className="fw-logo-text text-3xl m-auto" title="FAMILY EMPOWERMENT & Youth Reorientation Path Initiative">FEY<span className="text-gray-500">ReP</span></h1>

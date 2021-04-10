@@ -1,4 +1,5 @@
 import Section from "./sections";
+import Image from 'next/image';
 
 
 const Header = () => (
@@ -49,13 +50,30 @@ export const NewsHeader = ({ image }) => (
             <div className="lg:px-24 flex justify-center text-center">
                 <img className="h-96" src={`${image ? image : "/images/sections/children-3319460_1920.jpg"}`} alt="" />
             </div>
-        </Section> 
+        </Section>
     </div>
 );
 export const PagesHeader = ({ img }) => {
     return (
-        <div className="lg:-mt-14 overflow-hidden lg:relative lg:h-screen w-full" style={{background:"url("+img+") no-repeat",backgroundSize:"cover"}}>
-           <div className="  mt-32  wave-leaf lg:absolute lg:bottom-0"></div>
+        <div className="lg:-mt-14 overflow-hidden lg:relative lg:h-screen w-full" style={{ background: "url(" + img + ") no-repeat", backgroundSize: "cover" }}>
+            <div className="  mt-32  wave-leaf lg:absolute lg:bottom-0"></div>
+        </div>
+    )
+}
+
+export const AboutHeader = ({ img }) => {
+    return (
+        <div className="lg:-mt-14 overflow-hidden lg:relative lg:h-screen w-full" >
+            <div className="flex justify-center" style={{ maxWidth: "1366px" }}>
+                <Image
+                    src={img.src}
+                    width={1366}
+                    height={700}
+                    alt={img.alt}
+                    priority
+                />
+            </div>
+            <div className=" -mt-32  lg:mt-32  wave-leaf lg:absolute lg:bottom-0"></div>
         </div>
     )
 }
