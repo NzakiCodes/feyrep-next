@@ -1,10 +1,8 @@
 import React, { useEffect } from 'react';
-import axios from 'axios'
+import axios from 'axios';
+import Image from "next/image";
 import { Card, FeatureCard, InfoCard, NewsFlashCard } from 'components/cards';
 import Section, { SectionTitle } from 'components/sections';
-import Head from 'next/head';
-import Header from '../components/header';
-import Navbar from '../components/navbar';
 import { Grid } from 'components/grid';
 import Slider from "react-slick";
 import Layout from 'components/layout';
@@ -80,7 +78,12 @@ export default function Home() {
           <Grid className="container lg:px-10 grid-cols-1 md:grid-cols-2 md:gap-7 gap-y-4 lg:mx-auto w-full">
             <div className="relatdive  lg:h-96">
               <div className="">
-                <img className="rounded-lg" src="/images/sections/GBV_001.JPG" alt="Children" />
+                <Image
+                  width={584}
+                  height={370}
+                  className="rounded-lg"
+                  src="/images/sections/GBV_001.JPG"
+                  alt="Children" />
               </div>
             </div>
             <div>
@@ -110,9 +113,21 @@ export default function Home() {
         <Section fullWidth fullHeight className="" style={{ background: "url(/images/sections/children-3319460_1920.jpg) center no-repeat fixed", backgroundSize: "cover" }}>
           <div className="w-full h-full lg:py-14 lg:px-24" style={{ background: "rgba(0,0,0,0.89)" }}>
             <Grid className=" grid-cols-1 lg:grid-cols-2 lg:gap-x-7">
-              <Slider {...boySliderSettings} className=" max-h-64 md:max-h-96 overflow-hidden lg:py-10">
-                <img className="lg:rounded-lg" src="/images/stories/destiny/IMG_9598.JPG" alt="Children" />
-                <img className="lg:rounded-lg" src="/images/stories/destiny/IMG-20200113-WA0038.JPG" alt="Children" />
+              <Slider {...boySliderSettings} className=" overflow-hidden lg:py-5">
+                <Image
+                  width={590}
+                  height={450}
+                  className="lg:rounded-lg"
+                  src="/images/stories/destiny/IMG_9598.JPG"
+                  alt="Children"
+                />
+                <Image
+                  width={590}
+                  height={450}
+                  className="lg:rounded-lg"
+                  src="/images/stories/destiny/IMG-20200113-WA0038.JPG"
+                  alt="Children"
+                />
               </Slider>
               <div>
                 <div className="max-w-lg py-6 px-4 text-left">
@@ -145,7 +160,7 @@ export default function Home() {
           <div className="w-full h-full lg:py-14 lg:px-24" style={{ background: "rgba(0,0,0,0.89)" }}>
             <Grid className=" grid-cols-1 lg:grid-cols-2 lg:gap-x-7">
               <div className="">
-                <img className="lg:rounded-lg" src="/images/sections/IMG-2014_b.jpg" alt="Children" />
+                <Image width={564} height={376} className="lg:rounded-lg" src="/images/sections/IMG-2014_b.jpg" alt="Children" />
               </div>
               <div>
                 <div className="max-w-lg py-6 px-4 text-left">
@@ -177,7 +192,7 @@ export default function Home() {
         <Section fullWidth fullHeight className=" bg-primary my-auto overflow-hidden lg:h-screen" >
           <Grid className="grid-cols-1 lg:grid-cols-2 my-auto">
             <div className="">
-              <img src="/images/sections/pregnacare.jpg" alt="Children" />
+              <Image width={674.5} height={1011.75} src="/images/sections/pregnacare.jpg" alt="Children" />
             </div>
             <div className="px-10 py-10 lg:py-20">
               <div className="text-center text-white py-10">
@@ -188,7 +203,7 @@ export default function Home() {
           </Grid>
         </Section>
         <Section >
-          <Grid className="grid-cols-2 gap-x-4">
+          <Grid className="lg:grid-cols-2 grid-cols-1 gap-x-4 hidden">
             <div className="rounded-lg">
               <img className="rounded-lg" src="/images/sections/children-3319460_1920.jpg" alt="Children" />
             </div>

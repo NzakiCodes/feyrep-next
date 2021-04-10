@@ -22,7 +22,12 @@ export const NewsFlashCard = ({ title, img, children, text }) => (
                 </div>
             </div>
         </div>
-        <img className=" z-10" src={img} alt={img} />
+        <Image
+            width={450}
+            height={256}
+            src={img}
+            alt={img}
+        />
     </HoverableCard>
 );
 
@@ -48,7 +53,7 @@ const infoCardStyle = {
     zIndex: 30
 }
 export const InfoCard = () => (
-    <div className="bg-white lg:-top-12 z-30 lg:absolute py-14 lg:py-16 px-10 lg:shadow-lg rounded-lg grid lg:grid-flow-row space-y-8 lg:space-y-0  lg:grid-cols-3 md:grid-flow-col md:grid-cols-1" >
+    <div className="bg-white lg:-top-9 z-30 lg:absolute py-14 lg:py-16 px-10 lg:shadow-lg rounded-lg grid lg:grid-flow-row space-y-8 lg:space-y-0  lg:grid-cols-3 md:grid-flow-col md:grid-cols-1" >
         <div className=" pr-4 lg:text-left flex flex-col text-center lg:flex-row lg:border-r-2 border-gray-200">
             <div className="text-6xl col-span-5 px-10 " style={{ background: "url(/images/bg-flare.png) no-repeat", backgroundSize: "contain", backgroundPosition: "left 0px" }}>
                 <span className="flaticon-doctor text-primary-600"></span>
@@ -83,7 +88,7 @@ export const InfoCard = () => (
 )
 export const Card = ({ img, title, date, description, border }) => (
     <div className="hover:shadow-lg rounded border-gray-100 transition-all " style={border ? { borderWidth: "0.25px" } : { border: "none" }}>
-        <img src={img.src} alt={img.alt ? img.alt : img.src} />
+        <Image width={367} height={245} src={img.src} alt={img.alt ? img.alt : img.src} />
         <div className="container  py-8 px-5  bg-white">
             <div className="mb-4">
                 <h4 className="text-primary-200 uppercase font-bold font-quicksand">{date}</h4>
