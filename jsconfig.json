@@ -1,9 +1,8 @@
 {
-    "$schema":"https://json.schemastore.org/jsconfig",
-    "compilerOptions": {
+     "compilerOptions": {
         "baseUrl":"./",
         "paths": {
-            "@component": ["components/*"]
+            "@components": ["components/*"]
         }
     }
 }

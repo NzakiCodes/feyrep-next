@@ -12,7 +12,7 @@ export default function Layout({ children, pageTitle, navlink, home, style }) {
                 <link rel="stylesheet" href="/mdi/css/materialdesignicons.min.css" />
             </Head>
             <main>
-                <Navbar {...navlink && navlink} />
+                <Navbar activeBtn={ navlink} />
                 <div className="p-10" />
                 {
                     home && <Header />
