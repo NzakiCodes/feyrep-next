@@ -19,7 +19,7 @@ const Header = () => (
                             Despite the global outrage against Gender Based Violence and its attendant physical, emotional and psychological consequences on survivors, their families and the larger community...
                          </p>
                     </div>
-                    <div className="my-6 md:my-12">
+                    <div className="my-4 md:my-10">
                         <a href="/about" className="btn py-2 md:py-4 md:mt-9 mt-2 px-5 lg:px-12 rounded-full border-secondary-200  hover:bg-secondary-200 border-2 tracking-wider font-quicksand hover:text-gray-800 ">Know More</a>
                     </div>
                     {/* <h3 className="my18 md:mt5 md:text-1xl text-1xl m-10 text-center  text-white opacity-70 font-extrabold font-quicksand">

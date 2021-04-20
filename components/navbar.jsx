@@ -97,9 +97,9 @@ const Navbar = ({ activeBtn }) => {
                     </div>
                 </div>
                 <div className="sm:col-span-7 lg:hidden ">
-                    <div className="my-2  px-8">
-                        <button onClick={() => toggleExpansion(!isExpanded)} className="btn text-primary">
-                            {/* <i className="mdi mdi-hamburger text-5xl"></i> */}
+                    <div className="my-4  px-3">
+                        <button onClick={() => toggleExpansion(!isExpanded)} className="btn text-primary outline-none">
+
                             <div className="dropdown-trigger__item"></div>
 
                         </button>
