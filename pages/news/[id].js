@@ -1,5 +1,3 @@
-import React, { useState, useEffect, Fragment } from 'react';
-import Head from 'next/head';
 import Section from 'components/sections'
 import Markdown from 'markdown-to-jsx';
 import { NewsHeader } from 'components/header';

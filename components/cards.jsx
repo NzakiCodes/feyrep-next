@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export const HoverableCard = ({ children, className }) => {
     return (
@@ -86,16 +87,22 @@ export const InfoCard = () => (
         </div>
     </div>
 )
-export const Card = ({ img, title, date, description, border }) => (
+export const Card = ({ img, title, date, description, border, link, news }) => (
     <div className="hover:shadow-lg rounded border-gray-100 transition-all " style={border ? { borderWidth: "0.25px" } : { border: "none" }}>
-        <Image width={367} height={245} src={img.src} alt={img.alt ? img.alt : img.src} />
+        <Image width={381} height={245} src={img.src} alt={img.alt ? img.alt : img.src} layout="responsive" />
         <div className="container  py-8 px-5  bg-white">
             <div className="mb-4">
                 <h4 className="text-primary-200 uppercase font-bold font-quicksand">{date}</h4>
-                <h3 className="text-gray-900 font-extrabold capitalize transition-all font-bitter hover:text-primary-200" style={{ fontSize: "22px" }}>
-                    <a href="/new?">
-                        {title}
-                    </a>
+                <h3 className="text-gray-900 font-extrabold capitalize transition-all  font-sans hover:text-primary-200" style={{ fontSize: "22px" }}>
+                    {
+
+                        news ? <h3>{title}</h3>:
+                            <Link href={link ? link : "/"}>
+                                <a >
+                                    {title}
+                                </a>
+                            </Link>
+                    }
                 </h3>
             </div>
             <p className="text-base text-gray-500">{description}</p>
