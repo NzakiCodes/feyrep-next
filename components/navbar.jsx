@@ -117,7 +117,7 @@ const Navigation = ({ dropState }) => {
 
     return (
         <nav className={`${dropState ? `flex` : `hidden`
-            } transition-all  text-white bg-gradient-to-r from-gray-700 to-gray-400  items-center justify-between flex-wrap bg-teal-500 px-6`}>
+            } transition-all border border-t-2 items-center justify-between flex-wrap bg-teal-500 px-6`}>
 
             <div className={`${dropState ? `grid` : `hidden`
                 } w-full  py-6 grid-cols-2  `}>
