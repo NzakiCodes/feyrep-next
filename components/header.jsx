@@ -5,22 +5,22 @@ import Image from 'next/image';
 const Header = () => (
     <div className="relative  shadow-lg max-h-90">
         <div className="absolute inset-0 w-full h-full object-cover object-center z-20 bg-opacity-80 bg-black ">
-            <div className="flex justify-center">
-                <div className="max-w-screen-md sm:mt-10 container m-auto max-h-11 py-1 md:mt-20 text-center">
-                    <h1 className=" md:text-7xl mt-10 text-2xl text-white font-extrabold font-quicksand">
+            <div className="flex justify-center ">
+                <div className="max-w-screen-md lg:max-w-screen-md md:max-w-screen-sm sm:mt-10 container m-auto max-h-11 py-1 md:mt-20 text-center">
+                    <h1 className=" lg:text-7xl md:text-5xl mt-20 lg:mt-10 text-3xl text-white font-extrabold font-">
                         War against Gender Based Violence.
                     </h1>
-                    <h2 className="md:text-7xl text-secondary-200 text-2xl m-10 text-center  font-storytella ">
+                    <h2 className="md:text-5xl lg:text-7xl text-secondary-200 text-2xl lg:m-10 text-center  font-storytella ">
                         and RAPE.
                     </h2>
 
-                    <div className="container text-white  ">
+                    <div className="hidden md:block container text-white  ">
                         <p className="font-quicksand text-base px-2">
                             Despite the global outrage against Gender Based Violence and its attendant physical, emotional and psychological consequences on survivors, their families and the larger community...
                          </p>
                     </div>
-                    <div className="my-12">
-                        <a href="/about" className="btn  mt-9 px-12 rounded-full border-secondary-200  hover:bg-secondary-200 border-2 tracking-wider font-quicksand hover:text-gray-800 ">Know More</a>
+                    <div className="my-6 md:my-12">
+                        <a href="/about" className="btn py-2 md:py-4 md:mt-9 mt-2 px-5 lg:px-12 rounded-full border-secondary-200  hover:bg-secondary-200 border-2 tracking-wider font-quicksand hover:text-gray-800 ">Know More</a>
                     </div>
                     {/* <h3 className="my18 md:mt5 md:text-1xl text-1xl m-10 text-center  text-white opacity-70 font-extrabold font-quicksand">
                        We are Family Empowerment <br />

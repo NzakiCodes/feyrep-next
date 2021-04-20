@@ -1,7 +1,10 @@
+import { useState } from "react";
 import Link from 'next/link';
 import Image from 'next/image';
 
+
 const Navbar = ({ activeBtn }) => {
+    const [isExpanded, toggleExpansion] = useState(false);
     return (
         <div className="z-50 fixed w-full bg-white   shadow-lg">
             {/* <h1 className="text font-medium text-2xl">FEYReP</h1> */}
@@ -40,19 +43,23 @@ const Navbar = ({ activeBtn }) => {
                 </div>
             </div>
             <div className=" flex flex-row justify-between r fw-container sm:gap-10 md:gap-0" >
-                <div className="py-3 px-4  md:px-4 flex">
-                    <div className="col-span-5 xlg:col-span-4 p-1 ">
-                        <Image
-                            className="fw-logo"
-                            src="/images/logo-icon.png"
-                            width={35}
-                            height={48}
-                            alt="FEYReP logo" />
-                    </div>
-                    <div className="col-span-8">
-                        <h1 className="fw-logo-text text-3xl m-auto" title="FAMILY EMPOWERMENT & Youth Reorientation Path Initiative">FEY<span className="text-gray-500">ReP</span></h1>
-                    </div>
-                </div>
+                <Link href="/">
+                    <a>
+                        <div className="py-3 px-4  md:px-4 flex">
+                            <div className="col-span-5 xlg:col-span-4 p-1 ">
+                                <Image
+                                    className="fw-logo"
+                                    src="/images/logo-icon.png"
+                                    width={35}
+                                    height={48}
+                                    alt="FEYReP logo" />
+                            </div>
+                            <div className="col-span-8">
+                                <h1 className="fw-logo-text text-3xl m-auto" title="FAMILY EMPOWERMENT & Youth Reorientation Path Initiative">FEY<span className="text-gray-500">ReP</span></h1>
+                            </div>
+                        </div>
+                    </a>
+                </Link>
                 <div className="hidden lg:block  ">
                     <div className="justify-items-center grid  grid-flow-col lg:gap-0 xl:gap-1 place-items-center font-normal nav-buttons transition-all">
                         <Link href="/">
@@ -91,17 +98,86 @@ const Navbar = ({ activeBtn }) => {
                 </div>
                 <div className="sm:col-span-7 lg:hidden ">
                     <div className="my-2  px-8">
-                        <a href="" className="btn text-primary">
+                        <button onClick={() => toggleExpansion(!isExpanded)} className="btn text-primary">
                             {/* <i className="mdi mdi-hamburger text-5xl"></i> */}
                             <div className="dropdown-trigger__item"></div>
 
-                        </a>
+                        </button>
                     </div>
                 </div>
-            </div>
+
+            </div>  <Navigation dropState={isExpanded} />
         </div>
     )
 }
+
+
+const Navigation = ({ dropState }) => {
+
+
+    return (
+        <nav className={`${dropState ? `flex` : `hidden`
+            } transition-all  text-white bg-gradient-to-r from-gray-700 to-gray-400  items-center justify-between flex-wrap bg-teal-500 px-6`}>
+
+            <div className={`${dropState ? `grid` : `hidden`
+                } w-full  py-6 grid-cols-2  `}>
+                <div className="">
+                    <ul className="flex space-y-3 flex-col">
+                        <li>
+                            <Link href="/">
+                                <a className="hover:text-secondary" >HOME</a>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href="/about">
+                                <a className="hover:text-secondary" >ABOUT</a>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href="/projects">
+                                <a className="hover:text-secondary" >PROJECTS</a>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href="/media">
+                                <a className="hover:text-secondary" >MEDIA</a>
+                            </Link>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul className="flex space-y-3 flex-col">
+                        <li>
+                            <Link href="/publications">
+                                <a className="hover:text-secondary" >PUBLICATIONS</a>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href="/donation">
+                                <a className="hover:text-secondary" >DONATIONS</a>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href="/news">
+                                <a className="hover:text-secondary" >NEWS</a>
+                            </Link>
+                        </li>
+                        <li className="hidden">
+                            <Link href="/contact">
+                                <a className="hover:text-secondary" >CONTACT</a>
+                            </Link>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    )
+}
+
+
+
+
+
 /* Navbar.propTypes = {
     activeBtn: PropTypes.string,
 } */
