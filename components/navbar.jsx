@@ -125,22 +125,22 @@ const Navigation = ({ dropState }) => {
                     <ul className="flex space-y-3 flex-col">
                         <li>
                             <Link href="/">
-                                <a className="hover:text-secondary" >HOME</a>
+                                <a className="hover:text-primary-200" >HOME</a>
                             </Link>
                         </li>
                         <li>
                             <Link href="/about">
-                                <a className="hover:text-secondary" >ABOUT</a>
+                                <a className="hover:text-primary-200" >ABOUT</a>
                             </Link>
                         </li>
                         <li>
                             <Link href="/projects">
-                                <a className="hover:text-secondary" >PROJECTS</a>
+                                <a className="hover:text-primary-200" >PROJECTS</a>
                             </Link>
                         </li>
                         <li>
                             <Link href="/media">
-                                <a className="hover:text-secondary" >MEDIA</a>
+                                <a className="hover:text-primary-200" >MEDIA</a>
                             </Link>
                         </li>
                     </ul>
@@ -149,22 +149,22 @@ const Navigation = ({ dropState }) => {
                     <ul className="flex space-y-3 flex-col">
                         <li>
                             <Link href="/publications">
-                                <a className="hover:text-secondary" >PUBLICATIONS</a>
+                                <a className="hover:text-primary-200" >PUBLICATIONS</a>
                             </Link>
                         </li>
                         <li>
                             <Link href="/donation">
-                                <a className="hover:text-secondary" >DONATIONS</a>
+                                <a className="hover:text-primary-200" >DONATIONS</a>
                             </Link>
                         </li>
                         <li>
                             <Link href="/news">
-                                <a className="hover:text-secondary" >NEWS</a>
+                                <a className="hover:text-primary-200" >NEWS</a>
                             </Link>
                         </li>
                         <li className="hidden">
                             <Link href="/contact">
-                                <a className="hover:text-secondary" >CONTACT</a>
+                                <a className="hover:text-primary-200" >CONTACT</a>
                             </Link>
                         </li>
                     </ul>

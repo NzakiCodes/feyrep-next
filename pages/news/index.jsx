@@ -31,7 +31,7 @@ export default function News({ data }) {
             <HighlightHeader title={"News"} />
             <SectionTitle title="News" subtitle="FEYReP News" />
             <Section>
-                <Grid className="container py-20 container justify-center lg:px-10 grid-cols-1 content-center  md:grid-cols-2 lg:grid-cols-3 md:gap-7 gap-y-4 lg:mx-auto w-full">
+                <Grid className="container py-5 container justify-center lg:px-10 grid-cols-1 content-center  md:grid-cols-2 lg:grid-cols-3 md:gap-7 gap-y-4 lg:mx-auto w-full">
                     {
                         data && data.map((news_item) => {
                             const { id, title, cover_image, contents } = news_item;
