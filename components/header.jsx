@@ -31,16 +31,16 @@ const Header = () => (
                 </div>
             </div>
         </div>
-        <img lassName="absolute inset-0 w-full h-full object-cover object-center z-10"
-            src="/images/img-hero.JPG" alt="" />
-        {/* <Image
+        {/* <img className="absolute inset-0 w-full h-full object-cover object-center z-10"
+            src="/images/img-hero.JPG" alt="" /> */}
+        <Image
             width={1366}
             height={970}
             className="absolute inset-0 w-full h-full object-cover object-center z-10"
             src="/images/img-hero.JPG" alt="WomanBeach"
-            layout
+            // layout
             priority
-        /> */}
+        />
 
     </div>
 );
