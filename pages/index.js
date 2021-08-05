@@ -9,19 +9,7 @@ import Layout from 'components/layout';
 import useAPI from 'hooks/useAPI';
 
 
-// export async function getStaticProps() {
-//   var data = 0;
-//   axios
-//     .get("http://localhost:8055/items/news")
-//     .then(res => data = res.data.data)
-//     .catch(err => console.error(err));
 
-//   return {
-//     props: {
-//       header: { data }
-//     }
-//   }
-// }
 
 const img1 = { src: "/images/img-hero.JPG" }
 const eduProject = {

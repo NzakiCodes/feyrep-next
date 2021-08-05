@@ -6,22 +6,6 @@ import Header from "components/header";
 import { HighlightHeader } from "components/header"
 import Section, { SectionTitle } from "components/sections";
 
-// export async function getStaticProps() {
-//     const res = await fetch("https://www.master-7rqtwti-dd2fyzz46gjlw.ca-1.platformsh.site/items/news");
-//     const data = await res.json();
-
-//     if (!data) {
-//         return {
-//             notFound: true,
-//         }
-//     }
-
-//     return {
-//         props: {
-//             data: data.data
-//         }
-//     }
-// }
 
 export default function News({ data }) {
 
