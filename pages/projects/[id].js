@@ -34,33 +34,33 @@ const Projects = function ({ project }) {
     )
 }
 
-export async function getStaticPaths() {
+// export async function getStaticPaths() {
 
-    const res = await fetch("https://www.master-7rqtwti-dd2fyzz46gjlw.ca-1.platformsh.site/items/projects");
-    const posts = await res.json();
+//     const res = await fetch("https://www.master-7rqtwti-dd2fyzz46gjlw.ca-1.platformsh.site/items/projects");
+//     const posts = await res.json();
 
-    const paths = posts.data.map((post) => ({
-        params: { id: post.id.toString() },
-    }));
-    return { paths, fallback: false }
-}
+//     const paths = posts.data.map((post) => ({
+//         params: { id: post.id.toString() },
+//     }));
+//     return { paths, fallback: false }
+// }
 
-export async function getStaticProps({ params }) {
-    const res = await fetch(`https://www.master-7rqtwti-dd2fyzz46gjlw.ca-1.platformsh.site/items/projects/${params.id}`);
-    const {data} = await res.json();
+// export async function getStaticProps({ params }) {
+//     const res = await fetch(`https://www.master-7rqtwti-dd2fyzz46gjlw.ca-1.platformsh.site/items/projects/${params.id}`);
+//     const {data} = await res.json();
 
-    if (!data) {
-        return {
-            notFound: true,
-        }
-    }
+//     if (!data) {
+//         return {
+//             notFound: true,
+//         }
+//     }
 
-    return {
-        props: {
-            project: data
-        }
-    }
-}
+//     return {
+//         props: {
+//             project: data
+//         }
+//     }
+// }
 
 
 export default Projects
