@@ -54,15 +54,15 @@ const infoCardStyle = {
     zIndex: 30
 }
 export const InfoCard = () => (
-    <div className="bg-white lg:-top-9 z-30 lg:absolute py-14 lg:py-16 px-10 lg:shadow-lg rounded-lg grid lg:grid-flow-row space-y-8 lg:space-y-0  lg:grid-cols-3 md:grid-flow-col md:grid-cols-1" >
-        <div className=" pr-4 lg:text-left flex flex-col text-center lg:flex-row lg:border-r-2 border-gray-200">
+    <div className="bg-white lg:-top-9 md:-top-1 z-30 lg:absolute py-14 md:py-6 lg:py-16 px-10 lg:shadow-lg rounded-lg grid lg:grid-flow-row space-y-8 lg:space-y-0  lg:grid-cols-3 md:grid-flow-rows md:grid-cols-3" >
+        <div className="md:pt-9 sm:pt-0 lg:pt-0 pr-4 lg:text-left flex flex-col text-center lg:flex-row lg:border-r-2 border-gray-200">
             <div className="text-6xl col-span-5 px-10 " style={{ background: "url(/images/bg-flare.png) no-repeat", backgroundSize: "contain", backgroundPosition: "left 0px" }}>
                 <span className="flaticon-doctor text-primary-600"></span>
             </div>
             <div className="content col-span-7">
                 <h3 className="text-lg font-bold mb-0.5 pb-0.5 ">Health Intervention</h3>
                 <span className="bg-primary-600 inline-block  mb-4 px-10" style={{ padding: "1px 2px 1px 25px" }}></span>
-                <p className="text-base font-sans text-gray-700">Health, they say, is wealth. Globally, health is a key indicator of economic growth. “There are also certain social and health indicators of economic backwardness.</p>
+                <p className="text-base font-sans text-gray-700 md:max-h-2 inline-block overflow-ellipsis">Health, they say, is wealth. Globally, health is a key indicator of economic growth. “There are also certain social and health indicators of economic backwardness.</p>
             </div>
         </div>
         <div className=" pr-4 lg:text-left flex flex-col text-center lg:flex-row lg:border-r-2 border-gray-200">

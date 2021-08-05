@@ -6,22 +6,22 @@ import Header from "components/header";
 import { HighlightHeader } from "@components/header"
 import Section, { SectionTitle } from "components/sections";
 
-export async function getStaticProps() {
-    const res = await fetch("https://www.master-7rqtwti-dd2fyzz46gjlw.ca-1.platformsh.site/items/news");
-    const data = await res.json();
+// export async function getStaticProps() {
+//     const res = await fetch("https://www.master-7rqtwti-dd2fyzz46gjlw.ca-1.platformsh.site/items/news");
+//     const data = await res.json();
 
-    if (!data) {
-        return {
-            notFound: true,
-        }
-    }
+//     if (!data) {
+//         return {
+//             notFound: true,
+//         }
+//     }
 
-    return {
-        props: {
-            data: data.data
-        }
-    }
-}
+//     return {
+//         props: {
+//             data: data.data
+//         }
+//     }
+// }
 
 export default function News({ data }) {
 
@@ -32,7 +32,7 @@ export default function News({ data }) {
             <SectionTitle title="News" subtitle="FEYReP News" />
             <Section>
                 <Grid className="container py-5 container justify-center lg:px-10 grid-cols-1 content-center  md:grid-cols-2 lg:grid-cols-3 md:gap-7 gap-y-4 lg:mx-auto w-full">
-                    {
+                    {/* {
                         data && data.map((news_item) => {
                             const { id, title, cover_image, contents } = news_item;
 
@@ -47,7 +47,7 @@ export default function News({ data }) {
                         }
 
                         )
-                    }
+                    } */}
                 </Grid>
             </Section>
         </Layout>

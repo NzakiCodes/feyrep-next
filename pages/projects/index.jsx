@@ -13,7 +13,7 @@ export default function Projects({ projects }) {
             <SectionTitle title="Projects" subtitle="FEYReP Projects"/>
             <Section>
             <Grid className="container py-20 container justify-center lg:px-10 grid-cols-1 content-center  md:grid-cols-2 lg:grid-cols-3 md:gap-7 gap-y-4 lg:mx-auto w-full">
-                {
+                {/* {
                     projects && projects.map((project) => {
                         const { id, title, featured_image, content } = project;
 
@@ -29,7 +29,7 @@ export default function Projects({ projects }) {
 
                     )
                     // console.log(projects)
-                }
+                } */}
             </Grid>
             </Section>
         </Layout>

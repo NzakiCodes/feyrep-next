@@ -6,6 +6,8 @@ import Section, { SectionTitle } from 'components/sections';
 import { Grid } from 'components/grid';
 import Slider from "react-slick";
 import Layout from 'components/layout';
+import useAPI from 'hooks/useAPI';
+
 
 // export async function getStaticProps() {
 //   var data = 0;
@@ -29,7 +31,16 @@ const eduProject = {
 }
 
 export default function Home() {
-
+  const [data, loading, error] = useAPI('posts');
+  if (loading) {
+    // console.log("Loading Data");
+  }
+  if (error) {
+    console.error(error);
+  }
+  if (data) {
+    console.log(data);
+  }
   const sliderSettings = {
     dots: false,
     infinite: true,
@@ -137,7 +148,7 @@ export default function Home() {
                   <p className="text-lg lg:text-xl font-normal font-sans text-white">The story of Destiny who was abandoned by parents and grandparents is a compelling scoop on the human rights abuses of the world's vulnerable children. In Africa, many children from poor communities and families have been abandoned and left to die. </p><div className="py-3 mt-1">
                     <a href="/stories" className="px-9 lg:px-12 py-3 lg:py-4 inline-block rounded-full bg-transparent hover:text-gray-700 font-bold text-md uppercase transition hover:bg-secondary font-quicksand text-white border-secondary-200 border-2">
                       {/* <span className=" inline-block hover:scale-150 transform transition"></span> */}Read More
-                        </a>
+                    </a>
                     {/* <a href="/donate" className="fw-donate-btn hover:text-secondary-200 hover:border-secondary-200">Donate Now</a> */}
                   </div>
                 </div>
@@ -171,7 +182,7 @@ export default function Home() {
                   <div className="py-3 mt-1">
                     <a href="/donate" className="px-9 lg:px-12 py-3 lg:py-4 inline-block rounded-full bg-transparent hover:text-gray-700 font-bold text-md uppercase transition hover:bg-secondary font-quicksand text-white border-secondary-200 border-2">
                       {/* <span className=" inline-block hover:scale-150 transform transition"></span> */}Donate Now
-                        </a>
+                    </a>
                     {/* <a href="/donate" className="fw-donate-btn hover:text-secondary-200 hover:border-secondary-200">Donate Now</a> */}
                   </div>
                 </div>

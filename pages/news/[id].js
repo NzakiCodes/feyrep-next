@@ -11,7 +11,7 @@ const NewsItem = function ({ data }) {
         <Layout pageTitle={`News|${news && news.title}`} navlink="news">
             <Section className="container">
 
-                <SectionTitle subtitle={news && news.title} title="News" />
+                {/* <SectionTitle subtitle={news && news.title} title="News" />
                 <NewsHeader img={{ src: "https://www.master-7rqtwti-dd2fyzz46gjlw.ca-1.platformsh.site/assets/" + news.cover_image, alt: news.title }} />
                 {
                     news && (
@@ -20,7 +20,7 @@ const NewsItem = function ({ data }) {
                         </Markdown>
                     )
                 }
-
+ */}
 
             </Section>
         </Layout>

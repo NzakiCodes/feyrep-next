@@ -10,7 +10,7 @@ const Projects = function ({ project }) {
     return (
         <Layout pageTitle={`Project|${project && project.title}`} navlink="projects">
             <Section className="container px-10 mt-10" fullWidth>
-
+{/* 
                 <SectionTitle subtitle={project && project.title} title="Project" />
                 <Image
                     src={"https://www.master-7rqtwti-dd2fyzz46gjlw.ca-1.platformsh.site/assets/" + project.featured_image}
@@ -26,7 +26,7 @@ const Projects = function ({ project }) {
                             {project.content}
                         </Markdown>
                     )
-                }
+                } */}
 
 
             </Section>
