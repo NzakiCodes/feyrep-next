@@ -3,7 +3,7 @@ import { Grid } from "components/grid"
 import Link from "next/link";
 import Layout from "components/layout";
 import Header from "components/header";
-import { HighlightHeader } from "@components/header"
+import { HighlightHeader } from "components/header"
 import Section, { SectionTitle } from "components/sections";
 
 // export async function getStaticProps() {
